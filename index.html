@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T.A.T.T.O.O. Foundation | Fighting Labor Trafficking in the Trucking Industry</title>
+  <meta name="description" content="Survivor-led nonprofit advocating for truckers and owner-operators trapped in labor trafficking. Education, retraining, exit strategies, and housing support.">
+  <meta name="keywords" content="labor trafficking, trucking industry, truckers, owner operators, debt bondage, survivor-led, nonprofit, FLSA, MCA exemption">
+  <link rel="canonical" href="https://tattoo.foundation">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="T.A.T.T.O.O. Foundation | Fighting Labor Trafficking in the Trucking Industry">
+  <meta property="og:description" content="Survivor-led nonprofit advocating for truckers and owner-operators trapped in labor trafficking. Education, retraining, exit strategies, and housing support.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tattoo.foundation">
+  <meta property="og:site_name" content="T.A.T.T.O.O. Foundation">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="T.A.T.T.O.O. Foundation | Fighting Labor Trafficking in the Trucking Industry">
+  <meta name="twitter:description" content="Survivor-led nonprofit advocating for truckers and owner-operators trapped in labor trafficking.">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "T.A.T.T.O.O. Foundation",
+    "alternateName": "Truckers Against Trafficking Truckers & Owner Operators Foundation",
+    "url": "https://tattoo.foundation",
+    "email": "tk@tattoo.foundation",
+    "description": "Survivor-led nonprofit advocating for truckers and owner-operators trapped in labor trafficking within the trucking industry.",
+    "nonprofitStatus": "501(c)(3)",
+    "founder": {
+      "@type": "Person",
+      "name": "Tanaha Koontz",
+      "jobTitle": "Director of Operations"
+    },
+    "areaServed": "US",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================
+       CSS CUSTOM PROPERTIES
+       ============================================ */
+    :root {
+      --crimson-deep: #4a0a12;
+      --crimson: #6b0f1a;
+      --crimson-light: #7d1922;
+      --crimson-lighter: #8f232c;
+      --gold: #d4a843;
+      --gold-light: #e4c36d;
+      --gold-dark: #b8912e;
+      --gold-gradient: linear-gradient(135deg, #b8912e 0%, #d4a843 25%, #e4c36d 50%, #d4a843 75%, #b8912e 100%);
+      --gold-border: linear-gradient(135deg, #b8912e, #e4c36d, #d4a843, #e4c36d, #b8912e);
+      --text-primary: #f5f0e8;
+      --text-secondary: #d4a843;
+      --text-muted: #c4b8a8;
+      --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --font-body: 'Source Sans 3', 'Segoe UI', Tahoma, sans-serif;
+      --max-width: 1200px;
+      --section-padding: 6rem 1.5rem;
+      --transition: 0.3s ease;
+    }
+
+    /* ============================================
+       RESET & BASE
+       ============================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--crimson);
+      color: var(--text-primary);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* ============================================
+       SKIP LINK (Accessibility)
+       ============================================ */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      background: var(--gold);
+      color: var(--crimson-deep);
+      padding: 0.75rem 1.5rem;
+      font-weight: 700;
+      z-index: 10000;
+      border-radius: 0 0 4px 4px;
+      text-decoration: none;
+      font-family: var(--font-body);
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* ============================================
+       TYPOGRAPHY
+       ============================================ */
+    h1, h2, h3, h4, h5 {
+      font-family: var(--font-heading);
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: var(--gold-light);
+      text-decoration: underline;
+      text-decoration-color: rgba(212, 168, 67, 0.3);
+      text-underline-offset: 3px;
+      transition: color var(--transition), text-decoration-color var(--transition);
+    }
+
+    a:hover {
+      color: #fff;
+      text-decoration-color: #fff;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* ============================================
+       UTILITIES
+       ============================================ */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-label {
+      font-family: var(--font-body);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-divider {
+      width: 80px;
+      height: 3px;
+      background: var(--gold-gradient);
+      border: none;
+      margin: 1.5rem 0 2.5rem 0;
+    }
+
+    .gold-text {
+      color: var(--text-secondary);
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* ============================================
+       BUTTONS
+       ============================================ */
+    .btn {
+      display: inline-block;
+      padding: 0.875rem 2rem;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all var(--transition);
+      border: 2px solid transparent;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 3px;
+    }
+
+    .btn-donate {
+      background: var(--gold-gradient);
+      color: var(--crimson-deep);
+      border-color: var(--gold);
+      font-size: 1rem;
+      padding: 1rem 2.25rem;
+    }
+
+    .btn-donate:hover {
+      background: linear-gradient(135deg, #d4a843 0%, #e4c36d 40%, #f0d88a 60%, #e4c36d 100%);
+      color: var(--crimson-deep);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(212, 168, 67, 0.35);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-primary);
+      border: 2px solid var(--gold);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(212, 168, 67, 0.12);
+      color: #fff;
+    }
+
+    .btn-outline-gold {
+      background: transparent;
+      color: var(--gold);
+      border: 2px solid var(--gold);
+    }
+
+    .btn-outline-gold:hover {
+      background: var(--gold);
+      color: var(--crimson-deep);
+    }
+
+    /* ============================================
+       NAVIGATION
+       ============================================ */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 0 1.5rem;
+      transition: background var(--transition), box-shadow var(--transition);
+      background: rgba(74, 10, 18, 0.6);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .nav.scrolled {
+      background: rgba(74, 10, 18, 0.95);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .nav-logo {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+
+    .nav-logo:hover {
+      color: var(--gold);
+    }
+
+    .nav-logo:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+      transition: all var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    .nav-links a:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 4px;
+    }
+
+    .nav-donate {
+      padding: 0.6rem 1.5rem;
+      background: var(--gold-gradient);
+      color: var(--crimson-deep) !important;
+      border-radius: 3px;
+      border-bottom: none !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.1em !important;
+    }
+
+    .nav-donate:hover {
+      background: linear-gradient(135deg, #d4a843 0%, #e4c36d 40%, #f0d88a 60%, #e4c36d 100%) !important;
+      color: var(--crimson-deep) !important;
+      transform: translateY(-1px);
+      box-shadow: 0 3px 12px rgba(212, 168, 67, 0.3);
+    }
+
+    /* Hamburger */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      z-index: 1001;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: var(--text-primary);
+      transition: all var(--transition);
+      border-radius: 1px;
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    @media (max-width: 900px) {
+      .nav-toggle {
+        display: flex;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(320px, 85vw);
+        height: 100vh;
+        flex-direction: column;
+        background: var(--crimson-deep);
+        padding: 6rem 2rem 2rem;
+        gap: 0;
+        transition: right 0.35s ease;
+        box-shadow: -4px 0 30px rgba(0, 0, 0, 0.4);
+        overflow-y: auto;
+      }
+
+      .nav-links.open {
+        right: 0;
+      }
+
+      .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid rgba(212, 168, 67, 0.15);
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 1rem 0;
+        font-size: 1rem;
+        border-bottom: none;
+      }
+
+      .nav-donate {
+        margin-top: 1rem;
+        text-align: center;
+        display: block;
+      }
+    }
+
+    .nav-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .nav-overlay.active {
+      display: block;
+    }
+
+    /* ============================================
+       HERO SECTION
+       ============================================ */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8rem 1.5rem 6rem;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(107, 15, 26, 1) 0%, transparent 70%),
+        radial-gradient(ellipse at 80% 20%, rgba(143, 35, 44, 0.5) 0%, transparent 60%),
+        radial-gradient(ellipse at 50% 80%, rgba(74, 10, 18, 0.8) 0%, transparent 50%),
+        var(--crimson-deep);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 2px,
+          rgba(212, 168, 67, 0.015) 2px,
+          rgba(212, 168, 67, 0.015) 3px
+        );
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 200px;
+      background: linear-gradient(to top, var(--crimson), transparent);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content .section-label {
+      font-size: 0.85rem;
+      letter-spacing: 0.3em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5.5vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-sub {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.75;
+      font-weight: 300;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ============================================
+       SECTIONS — GENERAL
+       ============================================ */
+    .section {
+      padding: var(--section-padding);
+      position: relative;
+    }
+
+    .section-alt {
+      background: var(--crimson-deep);
+    }
+
+    .section-card-bg {
+      background: rgba(74, 10, 18, 0.5);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .section-header .section-divider {
+      margin: 1.5rem auto 2rem;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* ============================================
+       ABOUT SECTION
+       ============================================ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    .about-block {
+      padding: 2rem;
+      border: 1px solid rgba(212, 168, 67, 0.2);
+      border-radius: 4px;
+      background: rgba(74, 10, 18, 0.4);
+    }
+
+    .about-block h3 {
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .about-block p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .about-full {
+      grid-column: 1 / -1;
+      border-color: rgba(212, 168, 67, 0.35);
+      background: rgba(74, 10, 18, 0.6);
+    }
+
+    .founder-quote {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      color: var(--text-primary);
+      border-left: 3px solid var(--gold);
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+      line-height: 1.7;
+    }
+
+    .founder-attribution {
+      font-family: var(--font-body);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--gold);
+      margin-top: 0.75rem;
+      display: block;
+    }
+
+    /* Distinction box */
+    .distinction-box {
+      border-color: rgba(212, 168, 67, 0.45);
+      position: relative;
+    }
+
+    .distinction-box::before {
+      content: 'Important Distinction';
+      position: absolute;
+      top: -0.7em;
+      left: 1.5rem;
+      background: var(--crimson-deep);
+      padding: 0 0.75rem;
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+    }
+
+    /* ============================================
+       THE PROBLEM SECTION
+       ============================================ */
+    .problem-blocks {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .problem-item {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .problem-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.3rem;
+      width: 4px;
+      height: 2.5rem;
+      background: var(--gold-gradient);
+      border-radius: 2px;
+    }
+
+    .problem-item h3 {
+      color: var(--gold);
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .problem-item p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .pull-quote {
+      font-family: var(--font-heading);
+      font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+      font-style: italic;
+      color: var(--text-primary);
+      text-align: center;
+      padding: 2.5rem 2rem;
+      border-top: 1px solid rgba(212, 168, 67, 0.25);
+      border-bottom: 1px solid rgba(212, 168, 67, 0.25);
+      max-width: 700px;
+      margin: 3rem auto;
+      line-height: 1.65;
+    }
+
+    .legal-ref {
+      font-size: 0.85rem;
+      color: var(--gold-dark);
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    /* ============================================
+       PROGRAMS SECTION
+       ============================================ */
+    .programs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      .programs-grid {
+        grid-template-columns: 1fr;
+        max-width: 540px;
+        margin: 0 auto;
+      }
+    }
+
+    .program-card {
+      border: 1px solid rgba(212, 168, 67, 0.25);
+      border-radius: 4px;
+      padding: 2.5rem 2rem;
+      background: rgba(74, 10, 18, 0.45);
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .program-card:hover {
+      border-color: rgba(212, 168, 67, 0.5);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .program-card-number {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+      line-height: 1;
+    }
+
+    .program-card h3 {
+      color: var(--text-primary);
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .program-card p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .program-card ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 0.75rem;
+    }
+
+    .program-card ul li {
+      padding: 0.35rem 0 0.35rem 1.25rem;
+      position: relative;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .program-card ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.85rem;
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    /* ============================================
+       GET INVOLVED SECTION
+       ============================================ */
+    .involve-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .involve-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .involve-card {
+      border: 1px solid rgba(212, 168, 67, 0.2);
+      border-radius: 4px;
+      padding: 2.5rem 2rem;
+      background: rgba(107, 15, 26, 0.4);
+      transition: border-color var(--transition);
+    }
+
+    .involve-card:hover {
+      border-color: rgba(212, 168, 67, 0.45);
+    }
+
+    .involve-card h3 {
+      color: var(--gold);
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .involve-card p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .involve-card .btn {
+      font-size: 0.85rem;
+      padding: 0.7rem 1.5rem;
+    }
+
+    .involve-card.donate-card {
+      border-color: rgba(212, 168, 67, 0.45);
+      background: rgba(74, 10, 18, 0.7);
+    }
+
+    /* Membership tiers */
+    .tiers {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .tier {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gold);
+      border: 1px solid rgba(212, 168, 67, 0.3);
+      padding: 0.35rem 0.75rem;
+      border-radius: 3px;
+      background: rgba(212, 168, 67, 0.05);
+    }
+
+    /* Newsletter form */
+    .newsletter-form {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .newsletter-form input[type="email"] {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.7rem 1rem;
+      background: rgba(245, 240, 232, 0.08);
+      border: 1px solid rgba(212, 168, 67, 0.3);
+      border-radius: 3px;
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+    }
+
+    .newsletter-form input[type="email"]::placeholder {
+      color: rgba(245, 240, 232, 0.4);
+    }
+
+    .newsletter-form input[type="email"]:focus {
+      outline: 2px solid var(--gold);
+      outline-offset: 1px;
+      border-color: var(--gold);
+    }
+
+    .newsletter-form button {
+      white-space: nowrap;
+    }
+
+    /* Story invitation */
+    .story-text {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--text-primary);
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .footer {
+      background: var(--crimson-deep);
+      border-top: 1px solid rgba(212, 168, 67, 0.2);
+      padding: 3.5rem 1.5rem 2rem;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    .footer-brand h4 {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+
+    .footer h5 {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .footer-social a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: color var(--transition);
+    }
+
+    .footer-social a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 2.5rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(212, 168, 67, 0.12);
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      color: rgba(196, 184, 168, 0.6);
+      font-size: 0.8rem;
+      line-height: 1.8;
+    }
+
+    /* ============================================
+       MOBILE DONATE FAB
+       ============================================ */
+    .mobile-donate-fab {
+      display: none;
+      position: fixed;
+      bottom: 1.25rem;
+      right: 1.25rem;
+      z-index: 900;
+    }
+
+    .mobile-donate-fab .btn-donate {
+      padding: 0.85rem 1.75rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-donate-fab {
+        display: block;
+      }
+    }
+
+    /* ============================================
+       SCROLL REVEAL ANIMATION
+       ============================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+
+    /* ============================================
+       PRINT STYLESHEET
+       ============================================ */
+    @media print {
+      .nav, .mobile-donate-fab, .nav-overlay {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+        color: #1a1a1a;
+        font-size: 11pt;
+      }
+
+      h2, h3, .gold-text, .section-label {
+        color: #333 !important;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 2rem 0;
+        background: none !important;
+      }
+
+      .hero::before, .hero::after {
+        display: none;
+      }
+
+      .section {
+        padding: 1.5rem 0;
+      }
+
+      .about-block, .program-card, .involve-card {
+        border-color: #ccc;
+        background: none;
+      }
+
+      a {
+        color: #333;
+        text-decoration: underline;
+      }
+
+      .btn {
+        border: 1px solid #333;
+        background: none !important;
+        color: #333 !important;
+      }
+
+      .program-card-number {
+        -webkit-text-fill-color: #333;
+        color: #333;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="T.A.T.T.O.O. Foundation — Home">T.A.T.T.O.O. FOUNDATION</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#problem">The Problem</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#involved">Get Involved</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- REPLACE: PAYPAL_BUTTON_ID — Update the donate URL below with your PayPal Giving hosted button link -->
+        <li><a href="https://www.paypal.com/donate/?hosted_button_id=PLACEHOLDER" class="nav-donate" aria-label="Donate to T.A.T.T.O.O. Foundation">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-content">
+        <span class="section-label">Survivor-Led. Trucker-Focused. Labor Rights.</span>
+        <h1>They told us to look for trafficking victims at truck stops.<br><em>They never looked at the drivers.</em></h1>
+        <p class="hero-sub">T.A.T.T.O.O. Foundation is a survivor-led nonprofit fighting labor trafficking within the trucking industry &mdash; where debt bondage, coercion, and fraud trap the very people everyone else overlooks.</p>
+        <div class="hero-ctas">
+          <a href="#involved" class="btn btn-secondary">Learn More</a>
+          <!-- REPLACE: PAYPAL_BUTTON_ID -->
+          <a href="https://www.paypal.com/donate/?hosted_button_id=PLACEHOLDER" class="btn btn-donate">Donate Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-alt" aria-label="About T.A.T.T.O.O. Foundation">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">About Us</span>
+          <h2>Built by Someone Who Lived It</h2>
+          <hr class="section-divider">
+          <p>T.A.T.T.O.O. Foundation is a 501(c)(3) tax-exempt organization dedicated to combating labor trafficking within the trucking industry. We are survivor-led, trucker-focused, and unwilling to look away.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-block reveal">
+            <h3>Who We Are</h3>
+            <p>Truckers Against Trafficking Truckers &amp; Owner Operators Foundation exists because no one else is addressing the labor trafficking happening <em>to</em> truckers. While the anti-trafficking movement focuses on training drivers to spot victims at truck stops, we recognize what others refuse to see: <strong>truckers themselves are being trafficked.</strong></p>
+            <p>We are a labor advocacy organization building education, retraining programs, and exit infrastructure so that exploited drivers can reclaim their lives.</p>
+          </div>
+
+          <div class="about-block reveal">
+            <h3>The Founder</h3>
+            <p>Tanaha Koontz is a survivor of sex trafficking who entered the trucking industry seeking a fresh start. What she found instead were the same patterns she recognized from before: debt bondage, constant threats of homelessness for non-compliance, and coercion dressed up as employment.</p>
+            <p>She reached out to an existing anti-trafficking organization to raise these concerns. She was ignored. So she built T.A.T.T.O.O. Foundation to fill the gap that no one else would.</p>
+            <blockquote class="founder-quote">
+              &ldquo;I saw the poster that said &lsquo;Do you want out of the life?&rsquo; And I did. Only I was no longer being trafficked for sex &mdash; I was now a labor trafficking victim performing as a trucker, and nobody could see what I was experiencing.&rdquo;
+              <span class="founder-attribution">&mdash; Tanaha Koontz, Founder &amp; Director of Operations</span>
+            </blockquote>
+          </div>
+
+          <div class="about-block about-full distinction-box reveal">
+            <h3>T.A.T.T.O.O. Foundation Is Not TAT</h3>
+            <p><strong>T.A.T.T.O.O. Foundation is not affiliated with Truckers Against Trafficking (TAT / tatnonprofit.org) in any way.</strong> TAT, originally founded as Chapter 61 Ministries, trains truckers to identify and report sex trafficking at truck stops. Their work focuses on truckers as <em>observers</em> of trafficking.</p>
+            <p>T.A.T.T.O.O. Foundation does something fundamentally different. We advocate for truckers who <em>are</em> trafficking victims &mdash; specifically labor trafficking victims &mdash; trapped within the industry itself through debt bondage, fraud, and coercion. We are not a ministry. We are not asking truckers to spot victims. <strong>We are saying the truckers are the victims, and the industry is the perpetrator.</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE PROBLEM -->
+    <section id="problem" class="section" aria-label="The problem of labor trafficking in trucking">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">The Problem</span>
+          <h2>The Trucking Industry&rsquo;s Hidden Trafficking Problem</h2>
+          <hr class="section-divider">
+          <p>Labor trafficking thrives in the trucking industry because the law allows it, the system ignores it, and the victims are invisible to the very movement that claims to fight trafficking.</p>
+        </div>
+
+        <div class="problem-blocks">
+          <div class="problem-item reveal">
+            <h3>Labor Trafficking in Trucking</h3>
+            <p>The Trafficking Victims Protection Act (TVPA) defines labor trafficking as the recruitment, harboring, or obtaining of a person for labor through <strong>force, fraud, or coercion</strong> <span class="legal-ref">(22 U.S.C. &sect; 7102)</span>. In the trucking industry, these elements are structural:</p>
+            <p><strong>Debt bondage</strong> through predatory training costs and lease-purchase schemes that leave drivers owing tens of thousands of dollars. <strong>Coercion</strong> through the constant threat of homelessness, loss of CDL, and career destruction for non-compliance. <strong>Fraud</strong> through systematically misrepresented pay, hidden deductions, and contracts designed to confuse.</p>
+            <p>These are not bad business practices. Under federal law, they constitute labor trafficking.</p>
+          </div>
+
+          <div class="pull-quote reveal">
+            &ldquo;The trucking industry doesn&rsquo;t have a labor problem. It has a trafficking problem. The distinction matters because one has a legal remedy &mdash; if anyone would enforce it.&rdquo;
+          </div>
+
+          <div class="problem-item reveal">
+            <h3>The Legal Gap</h3>
+            <p>The <strong>Motor Carrier Act (MCA) exemption</strong> to the Fair Labor Standards Act <span class="legal-ref">(29 U.S.C. &sect; 213(b)(1))</span> strips truckers of basic labor protections that workers in virtually every other industry take for granted &mdash; including overtime pay.</p>
+            <p>The Department of Labor effectively will not assist truckers with labor violations because the MCA exemption creates a jurisdictional barrier. Drivers who have been defrauded, coerced, or trapped in debt bondage are told to hire their own attorneys &mdash; a financially impossible burden for people who are being exploited.</p>
+            <p>The system that is supposed to protect workers was designed with a carve-out that leaves truckers exposed.</p>
+          </div>
+
+          <div class="problem-item reveal">
+            <h3>The Invisible Victims</h3>
+            <p>Survivors of sex trafficking who enter the trucking industry as a &ldquo;fresh start&rdquo; career often find themselves trapped in a new form of exploitation. They recognize the patterns &mdash; the debt, the threats, the isolation, the inability to leave &mdash; but this time, it&rsquo;s called a job.</p>
+            <p>The anti-trafficking movement remains blind to this reality because it is fixated on sex trafficking. Existing organizations like TAT require mandatory training for CDL holders in states like Kansas &mdash; training that uses graphic video content depicting sex trafficking, retraumatizing survivors who are sitting in those orientations as new truckers.</p>
+            <p>No one asks the trucker in the orientation room whether <em>they</em> are a trafficking victim. The question is never directed inward. T.A.T.T.O.O. Foundation exists to change that.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs" class="section section-alt" aria-label="Our programs">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What We Do</span>
+          <h2>Programs</h2>
+          <hr class="section-divider">
+          <p>Knowledge is the first defense against exploitation. Exit strategy is the second. We are building both.</p>
+        </div>
+
+        <div class="programs-grid">
+          <div class="program-card reveal">
+            <div class="program-card-number">01</div>
+            <h3>Education &amp; Awareness</h3>
+            <p>Survivor-informed training that equips truckers with the knowledge to recognize labor trafficking indicators in their own work arrangements &mdash; without retraumatizing anyone in the process.</p>
+            <ul>
+              <li>Know-your-rights resources for CDL holders</li>
+              <li>Labor trafficking indicator identification</li>
+              <li>Legal rights under the TVPA and FLSA</li>
+              <li>Survivor-informed curriculum design</li>
+            </ul>
+          </div>
+
+          <div class="program-card reveal">
+            <div class="program-card-number">02</div>
+            <h3>Retraining &amp; Exit Strategy</h3>
+            <p>The most powerful tool of coercion is the belief that there is no way out. We are building exit infrastructure so trapped truckers can leave the industry with marketable skills and a future.</p>
+            <ul>
+              <li>Tech training and coding bootcamp partnerships</li>
+              <li>Career transition support and mentorship</li>
+              <li>Workforce development connections</li>
+              <li>Skills assessment and pathway planning</li>
+            </ul>
+          </div>
+
+          <div class="program-card reveal">
+            <div class="program-card-number">03</div>
+            <h3>Housing &amp; Stabilization</h3>
+            <p>&ldquo;Comply or be homeless&rdquo; is the core coercion tool of labor trafficking in trucking. We are addressing it directly with housing support during career transition.</p>
+            <ul>
+              <li>Housing support for exiting truckers</li>
+              <li>Stabilization resources during transition</li>
+              <li>Connection to existing assistance programs</li>
+              <li>Emergency support coordination</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GET INVOLVED -->
+    <section id="involved" class="section" aria-label="Get involved">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Take Action</span>
+          <h2>Get Involved</h2>
+          <hr class="section-divider">
+          <p>Every contribution &mdash; financial, personal, or simply spreading the word &mdash; strengthens the fight against labor trafficking in trucking.</p>
+        </div>
+
+        <div class="involve-grid">
+
+          <!-- DONATE -->
+          <div class="involve-card donate-card reveal">
+            <h3>Donate Now</h3>
+            <p>Your donation directly funds exit programs for labor trafficking victims in the trucking industry. Every dollar builds education, retraining, and housing infrastructure for exploited truckers fighting to reclaim their lives.</p>
+            <p style="font-size:0.85rem; color: rgba(196,184,168,0.7); margin-bottom:1.25rem;">T.A.T.T.O.O. Foundation is a 501(c)(3). Donations are tax-deductible.</p>
+            <!-- REPLACE: PAYPAL_BUTTON_ID — Update this link with your PayPal Giving hosted button URL -->
+            <a href="https://www.paypal.com/donate/?hosted_button_id=PLACEHOLDER" class="btn btn-donate">Donate Now</a>
+          </div>
+
+          <!-- MEMBERSHIP -->
+          <div class="involve-card reveal">
+            <h3>Become a Member</h3>
+            <p>Join the movement. Members receive updates on legislation, program launches, and opportunities to advocate for truckers&rsquo; labor rights. Be part of the organization that speaks for the drivers no one else sees.</p>
+            <div class="tiers">
+              <span class="tier">Supporter &mdash; $25/yr</span>
+              <span class="tier">Advocate &mdash; $50/yr</span>
+              <span class="tier">Champion &mdash; $100/yr</span>
+            </div>
+            <!-- MEMBERSHIP: Replace mailto with Stripe or payment processor link when ready -->
+            <!-- REPLACE: MEMBERSHIP_LINK -->
+            <a href="mailto:tk@tattoo.foundation?subject=T.A.T.T.O.O.%20Foundation%20Membership%20Inquiry" class="btn btn-outline-gold">Join Now</a>
+          </div>
+
+          <!-- NEWSLETTER -->
+          <div class="involve-card reveal">
+            <h3>Stay Informed</h3>
+            <p>Join our newsletter for updates on labor trafficking legislation, program launches, and ways to take action.</p>
+            <!-- NEWSLETTER: Replace this form with your email service provider embed code (Mailchimp, Buttondown, etc.) -->
+            <!-- REPLACE: NEWSLETTER_EMBED -->
+            <form class="newsletter-form" aria-label="Newsletter signup" onsubmit="handleNewsletter(event)">
+              <label for="newsletter-email" class="visually-hidden">Email address</label>
+              <input type="email" id="newsletter-email" name="email" placeholder="your@email.com" required aria-required="true">
+              <button type="submit" class="btn btn-outline-gold">Subscribe</button>
+            </form>
+          </div>
+
+          <!-- SHARE YOUR STORY -->
+          <div class="involve-card reveal">
+            <h3>Share Your Story</h3>
+            <p class="story-text">If you&rsquo;re a trucker and something feels wrong about your work arrangement &mdash; the debt, the threats, the feeling that you can&rsquo;t leave &mdash; you may be experiencing labor trafficking. You&rsquo;re not alone.</p>
+            <p>Reach out confidentially. We are survivor-led, and we understand what you are going through because we have lived it.</p>
+            <a href="mailto:tk@tattoo.foundation?subject=Confidential%20%E2%80%94%20Sharing%20My%20Story" class="btn btn-outline-gold">Reach Out</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer id="contact" class="footer" role="contentinfo" aria-label="Contact and site information">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h4>T.A.T.T.O.O. Foundation</h4>
+        <p>Truckers Against Trafficking Truckers &amp; Owner Operators Foundation</p>
+        <p>501(c)(3) Tax-Exempt Nonprofit</p>
+        <p style="margin-top:1rem;"><a href="mailto:tk@tattoo.foundation">tk@tattoo.foundation</a></p>
+        <p style="font-size:0.85rem;">Tanaha Koontz, Director of Operations</p>
+      </div>
+
+      <div>
+        <h5>Navigate</h5>
+        <ul class="footer-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#problem">The Problem</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#involved">Get Involved</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Connect</h5>
+        <div class="footer-social">
+          <!-- REPLACE: FACEBOOK_URL -->
+          <a href="#" aria-label="Facebook">FB</a>
+          <!-- REPLACE: INSTAGRAM_URL -->
+          <a href="#" aria-label="Instagram">IG</a>
+          <!-- REPLACE: TWITTER_URL -->
+          <a href="#" aria-label="X / Twitter">X</a>
+          <!-- REPLACE: LINKEDIN_URL -->
+          <a href="#" aria-label="LinkedIn">IN</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; 2026 T.A.T.T.O.O. Foundation. All rights reserved.<br>
+        T.A.T.T.O.O. Foundation is a 501(c)(3) tax-exempt organization. Donations are tax-deductible to the extent allowed by law.<br>
+        <!-- REPLACE: EIN_NUMBER -->
+        EIN: [Pending]
+      </p>
+    </div>
+  </footer>
+
+  <!-- Mobile Donate FAB -->
+  <!-- REPLACE: PAYPAL_BUTTON_ID -->
+  <div class="mobile-donate-fab" aria-label="Donate">
+    <a href="https://www.paypal.com/donate/?hosted_button_id=PLACEHOLDER" class="btn btn-donate">Donate</a>
+  </div>
+
+  <!-- ============================================
+       JAVASCRIPT
+       ============================================ -->
+  <script>
+    /* ===========================================
+       PAYPAL CONFIGURATION
+       ===========================================
+       To connect your PayPal Giving donate button:
+       1. Go to PayPal and create a donation button
+       2. Copy your hosted_button_id value
+       3. Find and replace all instances of "PLACEHOLDER"
+          in the donate button URLs above with your ID
+
+       Example: change hosted_button_id=PLACEHOLDER
+                to     hosted_button_id=ABC123XYZ
+       =========================================== */
+
+    // ---- Mobile navigation ----
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navOverlay = document.querySelector('.nav-overlay');
+
+    function openMenu() {
+      navLinks.classList.add('open');
+      navOverlay.classList.add('active');
+      navToggle.setAttribute('aria-expanded', 'true');
+      navToggle.setAttribute('aria-label', 'Close menu');
+    }
+
+    function closeMenu() {
+      navLinks.classList.remove('open');
+      navOverlay.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open menu');
+    }
+
+    navToggle.addEventListener('click', function () {
+      const isOpen = navLinks.classList.contains('open');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    navOverlay.addEventListener('click', closeMenu);
+
+    // Close menu when a nav link is clicked
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Close menu on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+        closeMenu();
+        navToggle.focus();
+      }
+    });
+
+    // ---- Sticky nav background on scroll ----
+    var nav = document.querySelector('.nav');
+    var scrollThreshold = 60;
+
+    function handleScroll() {
+      if (window.scrollY > scrollThreshold) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    // ---- Scroll reveal ----
+    var revealElements = document.querySelectorAll('.reveal');
+
+    if ('IntersectionObserver' in window) {
+      var revealObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      revealElements.forEach(function (el) {
+        revealObserver.observe(el);
+      });
+    } else {
+      // Fallback: show everything immediately
+      revealElements.forEach(function (el) {
+        el.classList.add('visible');
+      });
+    }
+
+    // ---- Newsletter form handler ----
+    function handleNewsletter(e) {
+      e.preventDefault();
+      var email = document.getElementById('newsletter-email').value;
+      // MVP: open mailto with pre-filled subject and email in body
+      window.location.href = 'mailto:tk@tattoo.foundation?subject=Newsletter%20Signup&body=Please%20add%20this%20email%20to%20the%20newsletter%3A%20' + encodeURIComponent(email);
+    }
+  </script>
+
+</body>
+</html>
