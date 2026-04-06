@@ -160,8 +160,7 @@
             .cta-buttons .btn { width: 100%; max-width: 300px; }
             .hero-video-container video { display: none; }
             .hero-video-container { background: center/cover no-repeat; }
-            .candid-seal { bottom: 1rem; right: 1rem; }
-            .candid-seal img { width: 70px; }
+            .candid-seal img { width: 28px; }
         }
 
         /* Mobile menu styles */
@@ -174,8 +173,9 @@
         @media (max-width: 768px) { .mobile-menu-toggle { display: block; } }
 
         /* Candid Seal */
-        .candid-seal { position: absolute; bottom: 2rem; right: 2rem; z-index: 10; }
-        .candid-seal img { width: 100px; height: auto; opacity: 0.9; transition: opacity 0.3s ease; }
+        .candid-seal { display: flex; align-items: center; }
+        .candid-seal a { display: flex; align-items: center; }
+        .candid-seal img { width: 36px; height: auto; opacity: 0.85; transition: opacity 0.3s ease; }
         .candid-seal img:hover { opacity: 1; }
     </style>
 </head>
@@ -194,6 +194,7 @@
                     <li><a href="#mission">mission</a></li>
                     <li><a href="https://www.gofundme.com/f/stop-the-exploitation-protect-americas-truckers" target="_blank">donate</a></li>
                     <li><a href="tel:405-633-3363" class="emergency-btn">🆘Crisis Line 24/7</a></li>
+                    <li class="candid-seal"><a aria-label="Truckers Against Trafficking Truckers & Owner Operators Foundation" href="https://app.candid.org/profile/16187780/truckers-against-trafficking-truckers-owner-operators-foundation-33-2580477/?pkId=f2505bb9-4bda-4e03-a95b-ed71b579dd34" target="_blank"><img alt="Candid Seal of Transparency" src="https://widgets.guidestar.org/prod/v1/pdp/transparency-seal/16187780/svg" /></a></li>
                 </ul>
             </nav>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
@@ -217,7 +218,7 @@
     <section class="hero">
         <div class="hero-video-container">
             <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
-                <source src="" type="video/mp4">
+                <source src="assets/tf_hero_clip1.mp4" type="video/mp4">
                 <div class="video-fallback">📹 Video: "trafficking to trucking"<br><small>The Trafficking to Trucking Pipeline</small></div>
             </video>
         </div>
@@ -245,11 +246,6 @@
                 </div>
                 <div></div>
             </div>
-        </div>
-        <div class="candid-seal">
-            <a aria-label="Truckers Against Trafficking Truckers & Owner Operators Foundation" href="https://app.candid.org/profile/16187780/truckers-against-trafficking-truckers-owner-operators-foundation-33-2580477/?pkId=f2505bb9-4bda-4e03-a95b-ed71b579dd34" target="_blank">
-                <img alt="Candid Seal of Transparency" src="https://widgets.guidestar.org/prod/v1/pdp/transparency-seal/16187780/svg" />
-            </a>
         </div>
     </section>
 
