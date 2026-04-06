@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Sponsorship Opportunities - T.A.T.T.O.O. Foundation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: white;
+            background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 50%, #450a0a 100%);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Elegant Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(251,191,36,0.08)" stroke-width="1"/></pattern></defs><rect width="1200" height="600" fill="url(%23grid)"/><circle cx="200" cy="150" r="2" fill="rgba(251,191,36,0.2)"/><circle cx="800" cy="100" r="1.5" fill="rgba(251,191,36,0.15)"/><circle cx="1000" cy="400" r="3" fill="rgba(251,191,36,0.1)"/></svg>') center/cover;
+            animation: gentle-float 40s ease-in-out infinite;
+        }
+
+        @keyframes gentle-float {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            25% { transform: translateY(-5px) translateX(3px); }
+            50% { transform: translateY(0px) translateX(-2px); }
+            75% { transform: translateY(3px) translateX(1px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            background: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+            padding: 0.8rem 1.8rem;
+            border-radius: 25px;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            backdrop-filter: blur(10px);
+            font-size: 0.9rem;
+            text-transform: lowercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+            color: #fbbf24;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 .emphasis {
+            font-weight: 600;
+            color: white;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        /* Elegant Section Styling */
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #fbbf24;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+            letter-spacing: -0.01em;
+        }
+
+        .section-title .emphasis {
+            font-weight: 600;
+            color: white;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        /* Business Benefits - Moved up for strategic positioning */
+        .benefits-section {
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(20px);
+        }
+
+        .benefits-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-style: italic;
+            color: rgba(255,255,255,0.7);
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(251,191,36,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255,255,255,0.08);
+        }
+
+        .benefit-card h4 {
+            color: #fbbf24;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+        }
+
+        .benefit-card p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.5;
+            font-weight: 300;
+            font-size: 0.95rem;
+        }
+
+        /* Approach Section */
+        .approach-section {
+            background: rgba(0,0,0,0.2);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(251,191,36,0.2);
+            border-bottom: 1px solid rgba(251,191,36,0.2);
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .approach-card {
+            text-align: center;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .approach-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .approach-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+            opacity: 0.8;
+        }
+
+        .approach-card h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #fbbf24;
+        }
+
+        .approach-card p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        /* Partnership Tiers */
+        .tiers-section {
+            background: rgba(255,255,255,0.03);
+            backdrop-filter: blur(20px);
+        }
+
+        .tiers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .tier-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(251,191,36,0.2);
+        }
+
+        .tier-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border-color: rgba(251,191,36,0.4);
+        }
+
+        .tier-header {
+            padding: 2.5rem 2rem 1.5rem;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(251,191,36,0.1), rgba(251,191,36,0.05));
+        }
+
+        .tier-name {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #fbbf24;
+            letter-spacing: -0.01em;
+        }
+
+        .tier-price {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .tier-reach {
+            background: rgba(251,191,36,0.2);
+            color: #fbbf24;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .tier-content {
+            padding: 0 2rem 2.5rem;
+        }
+
+        .tier-description {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .tier-benefits {
+            list-style: none;
+        }
+
+        .tier-benefits li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.5;
+            font-weight: 300;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .tier-benefits li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            top: 0.8rem;
+            color: #fbbf24;
+            font-weight: 400;
+        }
+
+        /* Premium Tiers */
+        .premium-tier {
+            background: linear-gradient(135deg, rgba(251,191,36,0.1), rgba(251,191,36,0.05));
+            border: 2px solid rgba(251,191,36,0.3);
+        }
+
+        .premium-tier .tier-header {
+            background: linear-gradient(135deg, rgba(251,191,36,0.15), rgba(251,191,36,0.08));
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: #fbbf24;
+            letter-spacing: -0.01em;
+        }
+
+        .cta-title .emphasis {
+            font-weight: 600;
+            color: white;
+        }
+
+        .cta-description {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            color: rgba(255,255,255,0.8);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #1a202c;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(251,191,36,0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(251,191,36,0.4);
+        }
+
+        /* Enhanced Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero {
+                min-height: 90vh;
+                padding: 2rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+                line-height: 1.2;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+            }
+
+            .hero-badge {
+                font-size: 0.8rem;
+                padding: 0.6rem 1.4rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .approach-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+
+            .approach-card {
+                padding: 1.5rem;
+            }
+
+            .approach-icon {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .approach-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .tiers-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+
+            .tier-card {
+                min-width: unset;
+            }
+
+            .tier-card:hover {
+                transform: translateY(-4px);
+            }
+
+            .tier-header {
+                padding: 2rem 1.5rem 1.2rem;
+            }
+
+            .tier-name {
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+
+            .tier-price {
+                font-size: 1rem;
+            }
+
+            .tier-reach {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .tier-content {
+                padding: 0 1.5rem 2rem;
+            }
+
+            .tier-description {
+                font-size: 0.95rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .tier-benefits li {
+                padding: 0.6rem 0;
+                padding-left: 1.8rem;
+                font-size: 0.9rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .benefit-card {
+                padding: 1.5rem;
+            }
+
+            .benefit-card h4 {
+                font-size: 1rem;
+            }
+
+            .benefit-card p {
+                font-size: 0.9rem;
+            }
+
+            .cta-section {
+                padding: 3rem 0;
+            }
+
+            .cta-title {
+                font-size: 1.7rem;
+            }
+
+            .cta-description {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .cta-button {
+                padding: 0.9rem 2rem;
+                font-size: 0.95rem;
+                width: auto;
+                display: inline-block;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .tier-name {
+                font-size: 1.3rem;
+            }
+
+            .tier-header {
+                padding: 1.5rem 1rem 1rem;
+            }
+
+            .tier-content {
+                padding: 0 1rem 1.5rem;
+            }
+
+            .benefit-card,
+            .approach-card {
+                padding: 1.2rem;
+            }
+
+            .cta-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Improved Touch Targets for Mobile */
+        @media (max-width: 768px) {
+            .tier-card {
+                cursor: pointer;
+                -webkit-tap-highlight-color: rgba(251,191,36,0.1);
+            }
+
+            .cta-button {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        /* Accessibility Improvements */
+        @media (prefers-reduced-motion: reduce) {
+            .hero::before {
+                animation: none;
+            }
+
+            .tier-card:hover,
+            .approach-card:hover,
+            .benefit-card:hover,
+            .cta-button:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">501(c)(3) nonprofit • survivor-founded • AI informed</div>
+                <h1>building pathways <span class="emphasis">out</span></h1>
+                <p class="hero-subtitle">We create sustainable transition programs for drivers escaping exploitation. Through housing, education, and career retraining, we're building the infrastructure that gives people real choices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Benefits - Moved up for strategic positioning -->
+    <section class="section benefits-section">
+        <div class="container">
+            <h2 class="section-title"><span class="emphasis">shared</span> interests</h2>
+            <p class="benefits-intro">While our mission focuses on driver welfare, we recognize that the same illegal operators exploiting drivers also create unfair market conditions for legitimate businesses.</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h4>marketplace stability</h4>
+                    <p>By helping drivers escape exploitative situations, we reduce the workforce available to illegal operators, naturally correcting market distortions.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h4>quality hiring pipeline</h4>
+                    <p>Drivers who complete our programs bring experience, stability, and an understanding of what legitimate employment looks like.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h4>industry reputation</h4>
+                    <p>Supporting driver welfare initiatives demonstrates commitment to ethical business practices and industry leadership.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h4>regulatory alignment</h4>
+                    <p>Our work supports compliance and safety initiatives that benefit all legitimate operators in the long term.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h4>cost reduction</h4>
+                    <p>Lower turnover and training expenses through access to experienced, stable drivers who understand professional standards.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h4>risk mitigation</h4>
+                    <p>Enhanced compliance and safety standards that reduce liability exposure and strengthen operational integrity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="section approach-section">
+        <div class="container">
+            <h2 class="section-title">resource <span class="emphasis">not</span> rescue</h2>
+            <p class="section-subtitle">We provide tools that empower people to build their own sustainable futures</p>
+
+            <div class="approach-grid">
+                <div class="approach-card">
+                    <div class="approach-icon">🏠</div>
+                    <h3>emergency housing</h3>
+                    <p>Safe spaces for drivers escaping exploitative situations, with pathways to permanent housing solutions</p>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-icon">💻</div>
+                    <h3>skills transition</h3>
+                    <p>Technology bootcamps and career training for drivers seeking alternatives to over-the-road work</p>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-icon">⚖️</div>
+                    <h3>legal support</h3>
+                    <p>Employment lawyers helping drivers recover stolen wages and escape debt bondage situations</p>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-icon">🗃️</div>
+                    <h3>safelist database</h3>
+                    <p>AI-powered tracking system helping drivers identify legitimate employers and avoid exploitation</p>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-icon">🤝</div>
+                    <h3>peer mentorship</h3>
+                    <p>Driver-to-driver support networks connecting experienced professionals with those navigating industry challenges</p>
+                </div>
+
+                <div class="approach-card">
+                    <div class="approach-icon">💰</div>
+                    <h3>financial assistance</h3>
+                    <p>Emergency funds and microgrants providing immediate relief during transition periods and crisis situations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Tiers -->
+    <section class="section tiers-section">
+        <div class="container">
+            <h2 class="section-title">corporate <span class="emphasis">sponsorship</span> levels</h2>
+            <p class="section-subtitle">Each level represents the scope and impact of your corporate sponsorship</p>
+
+            <div class="tiers-grid">
+                <!-- Residential Program Tier -->
+                <div class="tier-card premium-tier">
+                    <div class="tier-header">
+                        <h3 class="tier-name">residential program founder</h3>
+                        <div class="tier-price">$500,000 annually</div>
+                        <div class="tier-reach">reaching 5,000+ drivers yearly</div>
+                    </div>
+                    <div class="tier-content">
+                        <p class="tier-description">Fund the development of our residential education campus—a place where drivers can safely transition into technology careers while receiving housing and comprehensive support.</p>
+                        <ul class="tier-benefits">
+                            <li>naming rights for residential facility</li>
+                            <li>custom transitional housing programs</li>
+                            <li>priority job placement partnerships</li>
+                            <li>annual impact reporting</li>
+                            <li>logo placement across all programs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Housing Initiative -->
+                <div class="tier-card premium-tier">
+                    <div class="tier-header">
+                        <h3 class="tier-name">housing initiative partner</h3>
+                        <div class="tier-price">$250,000 annually</div>
+                        <div class="tier-reach">reaching 2,500+ drivers yearly</div>
+                    </div>
+                    <div class="tier-content">
+                        <p class="tier-description">Support emergency housing programs that give drivers immediate safety while they transition to legitimate employment opportunities.</p>
+                        <ul class="tier-benefits">
+                            <li>emergency housing program sponsorship</li>
+                            <li>driver placement partnerships</li>
+                            <li>quarterly program updates</li>
+                            <li>recognition in all housing facilities</li>
+                            <li>co-branded safety materials</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Supporter -->
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3 class="tier-name">education supporter</h3>
+                        <div class="tier-price">$100,000 annually</div>
+                        <div class="tier-reach">reaching 1,200+ drivers yearly</div>
+                    </div>
+                    <div class="tier-content">
+                        <p class="tier-description">Power our technology bootcamps and skills training programs that give drivers career alternatives.</p>
+                        <ul class="tier-benefits">
+                            <li>bootcamp program sponsorship</li>
+                            <li>graduate hiring partnerships</li>
+                            <li>logo on training materials</li>
+                            <li>bi-annual progress reports</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Crisis Response -->
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3 class="tier-name">crisis response partner</h3>
+                        <div class="tier-price">$50,000 annually</div>
+                        <div class="tier-reach">reaching 600+ drivers yearly</div>
+                    </div>
+                    <div class="tier-content">
+                        <p class="tier-description">Support immediate emergency assistance for drivers in crisis situations.</p>
+                        <ul class="tier-benefits">
+                            <li>emergency fund sponsorship</li>
+                            <li>driver referral opportunities</li>
+                            <li>recognition in crisis materials</li>
+                            <li>quarterly impact updates</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Safelist Sponsor -->
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3 class="tier-name">safelist sponsor</h3>
+                        <div class="tier-price">$25,000 annually</div>
+                        <div class="tier-reach">reaching 300+ drivers monthly</div>
+                    </div>
+                    <div class="tier-content">
+                        <p class="tier-description">Support our database platform that helps drivers identify legitimate employers.</p>
+                        <ul class="tier-benefits">
+                            <li>featured legitimate employer listing</li>
+                            <li>priority placement in driver referrals</li>
+                            <li>logo on safelist platform</li>
+                            <li>monthly usage reports</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Community Ally -->
+                <div class="tier-card">
+                    <div class="tier-header">
+                        <h3 class="tier-name">community ally</h3>
+                        <div class="tier-price">$10,000 annually</div>
+                        <div class="tier-reach">supporting local outreach</div>
+                    </div>
+                    <div class="tier-content">
+                        <p class="tier-description">Support local driver outreach and community education programs.</p>
+                        <ul class="tier-benefits">
+                            <li>community program support</li>
+                            <li>logo on outreach materials</li>
+                            <li>local event recognition</li>
+                            <li>quarterly newsletter inclusion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">explore <span class="emphasis">corporate</span> sponsorship</h2>
+            <p class="cta-description">Join us in building sustainable pathways for drivers while supporting an industry where legitimate businesses can thrive through ethical practices.</p>
+            <a href="mailto:partnerships@tattoo.foundation?subject=Corporate Sponsorship Inquiry&body=I'm interested in learning more about corporate sponsorship opportunities with T.A.T.T.O.O. Foundation." class="cta-button">
+                explore sponsorship opportunities
+            </a>
+        </div>
+    </section>
+
+    <!-- Tax Deductible Notice -->
+    <div style="text-align: center; padding: 2rem 0; border-top: 1px solid rgba(251,191,36,0.2); background: rgba(0,0,0,0.2);">
+        <div class="container">
+            <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; font-style: italic;">
+                T.A.T.T.O.O. Foundation is a 501(c)(3) organization. All sponsorships are tax-deductible to the full extent of the law.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
