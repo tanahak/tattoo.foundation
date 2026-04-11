@@ -1,0 +1,10 @@
+# tattoo.foundation - TATTOO Foundation
+# Truckers Against Trafficking Truckers & Owner Operators Foundation
+# 501(c)(3) nonprofit | EIN: 33-2580477
+
+User-agent: *
+Allow: /
+
+# LLM context file
+# See https://tattoo.foundation/llm.txt for full organizational context
+Sitemap: https://tattoo.foundation/sitemap.xml
