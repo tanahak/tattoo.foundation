@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue-Collar AI Access Program — T.A.T.T.O.O. Foundation</title>
+    <meta name="description" content="A grant program for small trucking companies to get free AI integration — AI-Native Webset and MCP server access to agentic freight marketplaces. Sponsored by Carso Cybernetics.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: white;
+            background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 50%, #450a0a 100%);
+            overflow-x: hidden;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+        /* Hero */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 4rem 0;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(251,191,36,0.08)" stroke-width="1"/></pattern></defs><rect width="1200" height="600" fill="url(%23grid)"/><circle cx="200" cy="150" r="2" fill="rgba(251,191,36,0.2)"/><circle cx="800" cy="100" r="1.5" fill="rgba(251,191,36,0.15)"/><circle cx="1000" cy="400" r="3" fill="rgba(251,191,36,0.1)"/></svg>') center/cover;
+        }
+
+        .hero-content { position: relative; z-index: 2; text-align: center; max-width: 860px; margin: 0 auto; }
+
+        .hero-badge {
+            background: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+            padding: 0.8rem 1.8rem;
+            border-radius: 25px;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            backdrop-filter: blur(10px);
+            font-size: 0.9rem;
+            text-transform: lowercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            color: #fbbf24;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 .emphasis { font-weight: 600; color: white; }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+        .btn {
+            display: inline-block;
+            padding: 0.95rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #1a202c;
+            box-shadow: 0 4px 15px rgba(251,191,36,0.3);
+        }
+
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(251,191,36,0.4); }
+
+        .btn-secondary {
+            background: transparent;
+            color: #fbbf24;
+            border-color: rgba(251,191,36,0.5);
+        }
+
+        .btn-secondary:hover { background: rgba(251,191,36,0.1); }
+
+        /* Sections */
+        .section { padding: 5rem 0; }
+        .section-alt { background: rgba(0,0,0,0.18); }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #fbbf24;
+            letter-spacing: -0.01em;
+        }
+
+        .section-title .emphasis { font-weight: 600; color: white; }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.78);
+            max-width: 720px;
+            margin: 0 auto 3rem;
+            font-weight: 300;
+        }
+
+        /* Thesis cards */
+        .thesis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .thesis-card {
+            background: rgba(0,0,0,0.25);
+            border: 1px solid rgba(251,191,36,0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .thesis-card:hover { transform: translateY(-3px); border-color: rgba(251,191,36,0.4); }
+
+        .thesis-card h4 {
+            color: #fbbf24;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            text-transform: lowercase;
+        }
+
+        .thesis-card p { color: rgba(255,255,255,0.85); font-size: 0.98rem; }
+
+        /* What you get */
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .package-card {
+            background: linear-gradient(135deg, rgba(251,191,36,0.08), rgba(251,191,36,0.03));
+            border: 1px solid rgba(251,191,36,0.25);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .package-icon { font-size: 2rem; margin-bottom: 1rem; }
+
+        .package-card h3 {
+            color: #fbbf24;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            text-transform: lowercase;
+            letter-spacing: -0.01em;
+        }
+
+        .package-card p { color: rgba(255,255,255,0.85); margin-bottom: 1rem; }
+
+        .package-card ul { list-style: none; padding: 0; }
+
+        .package-card li {
+            padding: 0.4rem 0 0.4rem 1.4rem;
+            position: relative;
+            color: rgba(255,255,255,0.78);
+            font-size: 0.95rem;
+        }
+
+        .package-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #fbbf24;
+            font-weight: 600;
+        }
+
+        /* Form */
+        .form-section { padding: 5rem 0; }
+
+        .form-wrap {
+            max-width: 820px;
+            margin: 0 auto;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid rgba(251,191,36,0.25);
+            border-radius: 16px;
+            padding: 3rem;
+        }
+
+        .form-intro {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: rgba(255,255,255,0.85);
+            font-size: 1.05rem;
+        }
+
+        .form-group { margin-bottom: 1.5rem; }
+
+        .form-group label {
+            display: block;
+            color: #fbbf24;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            text-transform: lowercase;
+            letter-spacing: 0.3px;
+        }
+
+        .form-group .hint {
+            display: block;
+            color: rgba(255,255,255,0.55);
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(251,191,36,0.25);
+            border-radius: 8px;
+            color: white;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: rgba(251,191,36,0.6);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .form-group textarea { resize: vertical; min-height: 110px; }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder { color: rgba(255,255,255,0.35); }
+
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+        @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+        .radio-group { display: flex; flex-direction: column; gap: 0.6rem; }
+
+        .radio-option {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(251,191,36,0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-start;
+        }
+
+        .radio-option:hover { border-color: rgba(251,191,36,0.5); background: rgba(255,255,255,0.07); }
+
+        .radio-option input[type="radio"] { width: auto; margin-top: 0.25rem; accent-color: #fbbf24; }
+
+        .radio-option .radio-label {
+            color: white;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        .radio-option .radio-desc { color: rgba(255,255,255,0.65); font-size: 0.9rem; font-weight: 300; }
+
+        .submit-row { text-align: center; margin-top: 2rem; }
+
+        .submit-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #1a202c;
+            padding: 1rem 3rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(251,191,36,0.3);
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(251,191,36,0.4); }
+
+        .submit-note {
+            display: block;
+            margin-top: 1rem;
+            color: rgba(255,255,255,0.55);
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        /* Sponsor section */
+        .sponsor-section {
+            padding: 4rem 0;
+            background: rgba(0,0,0,0.3);
+            border-top: 1px solid rgba(251,191,36,0.2);
+            text-align: center;
+        }
+
+        .sponsor-label {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(251,191,36,0.7);
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .sponsor-name {
+            font-size: 2rem;
+            color: #fbbf24;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .sponsor-name .emphasis { font-weight: 600; color: white; }
+
+        .sponsor-blurb {
+            max-width: 720px;
+            margin: 0 auto 2rem;
+            color: rgba(255,255,255,0.8);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .sponsor-link {
+            color: #fbbf24;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(251,191,36,0.4);
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .sponsor-link:hover { color: white; border-bottom-color: white; }
+
+        /* Footer */
+        .footer-note {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(251,191,36,0.2);
+            background: rgba(0,0,0,0.4);
+        }
+
+        .footer-note p { color: rgba(255,255,255,0.65); font-size: 0.9rem; font-style: italic; }
+
+        .footer-note a { color: rgba(251,191,36,0.85); text-decoration: none; }
+        .footer-note a:hover { color: #fbbf24; }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .container { padding: 0 1rem; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero-subtitle { font-size: 1.05rem; }
+            .section-title { font-size: 1.8rem; }
+            .form-wrap { padding: 2rem 1.25rem; }
+            .sponsor-name { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">blue-collar AI access program • grant application</div>
+                <h1>your shot at being an <span class="emphasis">early adopter</span></h1>
+                <p class="hero-subtitle">Free AI integration for small trucking companies. AI-Native Webset and MCP server access to agentic freight marketplaces — funded by sponsors who believe small carriers shouldn't get left behind while the big fleets buy their way into the AI economy.</p>
+                <div class="hero-actions">
+                    <a href="#apply" class="btn btn-primary">Apply for the Grant →</a>
+                    <a href="#what-you-get" class="btn btn-secondary">What You Get</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thesis -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">why this is your <span class="emphasis">moment</span></h2>
+            <p class="section-subtitle">Most small carriers can't afford to invest in AI. That hesitation is the opening. Carriers who get integrated now will be the ones agentic marketplaces route loads to first.</p>
+
+            <div class="thesis-grid">
+                <div class="thesis-card">
+                    <h4>incumbents are stalling</h4>
+                    <p>The mid-market carriers running 50–500 trucks are mostly waiting to "see how AI shakes out." They're the ones you compete with — and they're standing still.</p>
+                </div>
+                <div class="thesis-card">
+                    <h4>agentic marketplaces are real</h4>
+                    <p>Freight is moving toward AI-to-AI booking. Brokers' agents talk to carriers' agents, negotiate rates, and book loads. If your dispatch isn't reachable by another agent, you're invisible.</p>
+                </div>
+                <div class="thesis-card">
+                    <h4>small fleets can move first</h4>
+                    <p>You don't have a six-month procurement committee. You have a phone and a decision-maker. That's the actual advantage — not capital, speed.</p>
+                </div>
+                <div class="thesis-card">
+                    <h4>AI-native posture matters</h4>
+                    <p>Shippers and brokers are starting to filter for "AI-ready" carriers. Being on the list early is worth more than being on it perfectly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What you get -->
+    <section class="section section-alt" id="what-you-get">
+        <div class="container">
+            <h2 class="section-title">what the grant <span class="emphasis">covers</span></h2>
+            <p class="section-subtitle">Built and integrated for you. Not a course, not a course-corrected SaaS bill — a working system you own.</p>
+
+            <div class="package-grid">
+                <div class="package-card">
+                    <div class="package-icon">🌐</div>
+                    <h3>AI-native webset</h3>
+                    <p>A site that's actually readable by AI agents — not just humans. Structured data, agent-discoverable endpoints, and a posture that says "we're open for AI-to-AI business."</p>
+                    <ul>
+                        <li>Agent-readable carrier profile</li>
+                        <li>Capacity, equipment, lanes exposed in machine-readable form</li>
+                        <li>Compliance and safety credentials surfaced to verifiers</li>
+                        <li>SEO + AEO (answer-engine optimization) baked in</li>
+                    </ul>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-icon">🔌</div>
+                    <h3>MCP server</h3>
+                    <p>Your dispatch, capacity, and rate data exposed through the Model Context Protocol — so any agent on any agentic marketplace can talk to your operation directly.</p>
+                    <ul>
+                        <li>Capacity-search endpoint for inbound broker agents</li>
+                        <li>Rate-quote tool the way agents expect to call it</li>
+                        <li>Auth + rate-limiting handled, you stay in control</li>
+                        <li>Connects to the marketplaces emerging in 2026</li>
+                    </ul>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-icon">🛠️</div>
+                    <h3>integration & training</h3>
+                    <p>Hands-on integration with your existing TMS, ELD, and dispatch tools — plus training for your office staff so they aren't fighting the system you just installed.</p>
+                    <ul>
+                        <li>TMS/ELD adapter work</li>
+                        <li>Office team walkthroughs</li>
+                        <li>Driver-facing tools where it makes sense</li>
+                        <li>30 days of post-launch support</li>
+                    </ul>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-icon">📈</div>
+                    <h3>marketplace listing</h3>
+                    <p>Listed on the agentic-freight directories that brokers' agents are starting to query. Being listed early matters more than being listed perfectly.</p>
+                    <ul>
+                        <li>Onboarded to participating agentic marketplaces</li>
+                        <li>Verified-carrier badging</li>
+                        <li>First-mover positioning in your lanes</li>
+                        <li>Referenceable case study (opt-in)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="form-section" id="apply">
+        <div class="container">
+            <h2 class="section-title">grant <span class="emphasis">application</span></h2>
+            <p class="section-subtitle">This is a scholarship-style application. We read every one. Tell us about your fleet, what you're trying to solve, and whether you're applying for a full or partial grant.</p>
+
+            <div class="form-wrap">
+                <p class="form-intro">All fields required unless marked optional. Expect a response within 7 business days.</p>
+
+                <form id="application-form" onsubmit="submitApplication(event)">
+
+                    <!-- Company info -->
+                    <div class="form-group">
+                        <label for="company">company name</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dot">USDOT number</label>
+                            <input type="text" id="dot" name="dot" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mc">MC number <span class="hint" style="display:inline; margin:0;">(optional)</span></label>
+                            <input type="text" id="mc" name="mc">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="trucks">number of trucks</label>
+                            <input type="number" id="trucks" name="trucks" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="years">years in operation</label>
+                            <input type="number" id="years" name="years" min="0" required>
+                        </div>
+                    </div>
+
+                    <!-- Contact info -->
+                    <div class="form-group">
+                        <label for="contact_name">contact name</label>
+                        <input type="text" id="contact_name" name="contact_name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <!-- Tech context -->
+                    <div class="form-group">
+                        <label for="current_tech">current tech stack</label>
+                        <span class="hint">What TMS, ELD, dispatch software, or other systems are you running today? It's fine if the answer is "spreadsheets and a flip phone."</span>
+                        <textarea id="current_tech" name="current_tech" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="problems">what would you use AI for?</label>
+                        <span class="hint">Where is your operation losing money or time? What would you fix first if you had a working AI integration tomorrow?</span>
+                        <textarea id="problems" name="problems" required></textarea>
+                    </div>
+
+                    <!-- Grant type -->
+                    <div class="form-group">
+                        <label>grant type</label>
+                        <span class="hint">Full grants cover 100% of integration cost. Partial grants ask you to contribute what you can — being honest here doesn't hurt your application.</span>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="grant_type" value="full" required>
+                                <span>
+                                    <span class="radio-label">full grant</span>
+                                    <span class="radio-desc">We cover the entire integration. Best fit for owner-operators and very small fleets where any cost is prohibitive.</span>
+                                </span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="grant_type" value="partial" required>
+                                <span>
+                                    <span class="radio-label">partial grant</span>
+                                    <span class="radio-desc">We cover most; you contribute what you can. Helps us extend the program to more carriers. You'll tell us your contribution amount below.</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="contribution-group">
+                        <label for="contribution">your contribution <span class="hint" style="display:inline; margin:0;">(if applying for partial grant)</span></label>
+                        <span class="hint">Either a dollar amount you can put toward integration, or in-kind contributions like office staff time, pilot data access, or willingness to be a public reference.</span>
+                        <textarea id="contribution" name="contribution"></textarea>
+                    </div>
+
+                    <!-- Scholarship-style essay -->
+                    <div class="form-group">
+                        <label for="why_us">why are you a good fit for this program?</label>
+                        <span class="hint">Tell us about your operation, your team, and why being an early AI adopter would change things for you. The most useful answers are specific.</span>
+                        <textarea id="why_us" name="why_us" required style="min-height: 160px;"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="referral">how did you hear about this program? <span class="hint" style="display:inline; margin:0;">(optional)</span></label>
+                        <input type="text" id="referral" name="referral">
+                    </div>
+
+                    <div class="submit-row">
+                        <button type="submit" class="submit-btn">Submit Application</button>
+                        <span class="submit-note">Submitting will open your email client with your application pre-filled, addressed to partnerships@tattoo.foundation.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsor recognition -->
+    <section class="sponsor-section">
+        <div class="container">
+            <div class="sponsor-label">sponsored by</div>
+            <h2 class="sponsor-name"><span class="emphasis">Carso</span> Cybernetics</h2>
+            <p class="sponsor-blurb">The Blue-Collar AI Access Program is funded and built by <a href="https://carsocybernetics.com" class="sponsor-link" target="_blank" rel="noopener">Carso Cybernetics</a>, who has committed to sponsoring small trucking businesses with free AI integrations. Carso builds the AI-Native Websets and MCP servers used in this program — the same infrastructure they sell to enterprise carriers, given at no cost to the small operators this industry was built on.</p>
+            <a href="https://carsocybernetics.com" class="btn btn-secondary" target="_blank" rel="noopener">Learn About Carso Cybernetics →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-note">
+        <div class="container">
+            <p>T.A.T.T.O.O. Foundation is a 501(c)(3) organization. The Blue-Collar AI Access Program is administered through the Foundation and funded by program sponsors. <a href="index.html">Back to home</a> · <a href="sponsorship.html">Corporate Sponsorship</a></p>
+        </div>
+    </div>
+
+    <script>
+        function submitApplication(event) {
+            event.preventDefault();
+            const f = event.target;
+            const get = (n) => (f.elements[n]?.value || '').trim();
+            const grantType = (f.elements['grant_type'].value || '').trim();
+
+            const lines = [
+                'Blue-Collar AI Access Program — Grant Application',
+                '',
+                '== Company ==',
+                'Company:        ' + get('company'),
+                'USDOT:          ' + get('dot'),
+                'MC:             ' + (get('mc') || '(not provided)'),
+                'Trucks:         ' + get('trucks'),
+                'Years operating:' + get('years'),
+                '',
+                '== Contact ==',
+                'Name:  ' + get('contact_name'),
+                'Email: ' + get('email'),
+                'Phone: ' + get('phone'),
+                '',
+                '== Current tech stack ==',
+                get('current_tech'),
+                '',
+                '== What they would use AI for ==',
+                get('problems'),
+                '',
+                '== Grant type ==',
+                grantType.toUpperCase(),
+                '',
+                '== Contribution (if partial) ==',
+                get('contribution') || '(none provided)',
+                '',
+                '== Why a good fit ==',
+                get('why_us'),
+                '',
+                '== Referral ==',
+                get('referral') || '(not provided)'
+            ];
+
+            const body = encodeURIComponent(lines.join('\n'));
+            const subject = encodeURIComponent('Blue-Collar AI Access Program Application — ' + get('company'));
+            window.location.href = 'mailto:partnerships@tattoo.foundation?subject=' + subject + '&body=' + body;
+        }
+    </script>
+</body>
+</html>
