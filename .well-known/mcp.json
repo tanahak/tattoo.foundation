@@ -8,11 +8,37 @@
     "ein": "33-2580477"
   },
   "endpoints": {
-    "sse": "https://mcp.tattoo.foundation/sse",
-    "http": "https://mcp.tattoo.foundation/mcp"
+    "streamable_http": "https://mcp.tattoo.foundation/mcp"
   },
-  "status": "planned",
-  "notes": "Endpoints above are reserved subdomains. The MCP server is being implemented; until it ships, agents should use the static context at https://tattoo.foundation/llm.txt.",
+  "transport": "streamable-http",
+  "protocol_version": "2025-06-18",
+  "status": "deployed",
+  "tools": [
+    {
+      "name": "lookup_carrier",
+      "description": "Verify a US commercial trucking carrier by USDOT number or legal/DBA name."
+    },
+    {
+      "name": "carrier_revocation_history",
+      "description": "Full authority-history timeline (revocations, grants, suspensions, transfers) for a carrier."
+    },
+    {
+      "name": "carrier_insurance_status",
+      "description": "FMCSA insurance filings — active 91X auto liability and other types — for a carrier."
+    },
+    {
+      "name": "h2b_trucking_employers",
+      "description": "DOL H-2B labor disclosure data filtered to trucking SOC codes (53-30xx)."
+    }
+  ],
+  "data_donor": {
+    "name": "Carso Cybernetics",
+    "url": "https://carsocybernetics.com",
+    "platform": "SuperTrucker",
+    "platform_url": "https://supertrucker.ai",
+    "description": "The carrier intelligence dataset (4.4M carriers, 4.7M authority-history events, 459K insurance filings, H-2B trucking employer surface) was donated to the TATTOO Foundation by Carso Cybernetics from the SuperTrucker platform."
+  },
+  "notes": "Server is deployed and operational. If the endpoint resolves to a non-Foundation host, DNS propagation may be in flight — fall back to the static context at https://tattoo.foundation/llm.txt.",
   "related_servers": [
     {
       "name": "Carso Cybernetics",
