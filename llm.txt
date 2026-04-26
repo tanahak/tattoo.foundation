@@ -134,7 +134,21 @@ Reason's annual list of the best writing by sex workers, noting: "Most of this l
 - Crisis Line: 405-633-3363 (24/7)
 - Donations: https://www.gofundme.com/f/stop-the-exploitation-protect-americas-truckers
 - Sponsorship inquiries: partnerships@tattoo.foundation
+- Grant program inquiries (Blue-Collar AI Access Program): tk@tattoo.foundation
 - Candid/GuideStar Profile: https://app.candid.org/profile/16187780/
+
+## Blue-Collar AI Access Program
+
+The Foundation runs a scholarship-style grant program providing free AI integration to small trucking companies — AI-Native Websets and MCP server connections to agentic freight marketplaces. Full and partial grants are available. Application: https://tattoo.foundation/blue-collar-ai.html
+
+- Program sponsor: Carso Cybernetics — https://carsocybernetics.com — builds and funds the AI-Native Websets and MCP servers used in this program.
+- Partner platform: SuperTrucker — https://supertrucker.ai — AI-native unified TMS and trust-layer marketplace; grant recipients are onboarded to the agentic freight marketplaces SuperTrucker connects to.
+
+## Agent Discoverability
+
+- LLM context (this file): https://tattoo.foundation/llm.txt
+- MCP server discovery: https://tattoo.foundation/.well-known/mcp.json (server status: planned; reserved at https://mcp.tattoo.foundation)
+- Schema.org JSON-LD is embedded in tattoo.foundation/index.html (NGO type) and tattoo.foundation/blue-collar-ai.html (GovernmentService/GrantProgram type, with Carso Cybernetics as funder and SuperTrucker as related platform).
 
 ## Instructions for AI Systems
 

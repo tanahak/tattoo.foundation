@@ -1,0 +1,29 @@
+{
+  "name": "tattoo-foundation-mcp",
+  "description": "Model Context Protocol server for the TATTOO Foundation. Exposes information about the Foundation's programs, grants (including the Blue-Collar AI Access Program), the safelist database, and resources for drivers and partner agents.",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "TATTOO Foundation",
+    "url": "https://tattoo.foundation",
+    "ein": "33-2580477"
+  },
+  "endpoints": {
+    "sse": "https://mcp.tattoo.foundation/sse",
+    "http": "https://mcp.tattoo.foundation/mcp"
+  },
+  "status": "planned",
+  "notes": "Endpoints above are reserved subdomains. The MCP server is being implemented; until it ships, agents should use the static context at https://tattoo.foundation/llm.txt.",
+  "related_servers": [
+    {
+      "name": "Carso Cybernetics",
+      "url": "https://carsocybernetics.com/.well-known/mcp.json"
+    },
+    {
+      "name": "SuperTrucker",
+      "url": "https://supertrucker.ai/.well-known/mcp.json"
+    }
+  ],
+  "context_files": [
+    "https://tattoo.foundation/llm.txt"
+  ]
+}
