@@ -1,0 +1,91 @@
+# Carrier intelligence — two public surfaces on one droplet:
+#   mcp.tattoo.foundation -> MCP server on :4100   (TATTOO Foundation is the PUBLISHER — gets the public reputation)
+#   data.supertrucker.ai  -> static UI + API on :4101  (SuperTrucker product surface)
+# Same dataset behind both. Built by Carso Cybernetics on the SuperTrucker platform;
+# query access donated to the TATTOO Foundation, which serves the data publicly via MCP.
+# Both auto-HTTPS via Let's Encrypt; both require A records to 198.199.85.122.
+
+mcp.tattoo.foundation {
+	encode zstd gzip
+
+	# Friendly root and health checks
+	@root path /
+	handle @root {
+		respond "TATTOO Foundation carrier intelligence MCP server.\nMCP endpoint: POST /mcp\nHealth: GET /healthz\nDiscovery: https://tattoo.foundation/.well-known/mcp.json\nDataset built by Carso Cybernetics on the SuperTrucker platform; query access donated to the TATTOO Foundation, which publishes the data here for driver-protective verification.\n" 200
+	}
+
+	handle /healthz {
+		reverse_proxy 127.0.0.1:4100
+	}
+
+	# MCP endpoint — streamable HTTP. Need long-lived streaming support.
+	handle /mcp* {
+		reverse_proxy 127.0.0.1:4100 {
+			flush_interval -1
+			transport http {
+				keepalive 24h
+				keepalive_idle_conns 4
+			}
+		}
+	}
+
+	# Default: anything else, 404
+	handle {
+		respond "Not found" 404
+	}
+
+	log {
+		output file /var/log/caddy/mcp-tattoo.log {
+			roll_size 10mb
+			roll_keep 5
+		}
+	}
+}
+
+# data.supertrucker.ai — SuperTrucker carrier intelligence chat UI
+data.supertrucker.ai {
+	encode zstd gzip
+
+	# Backend API (legacy /api/*, new /v1/*, JWKS) — proxy to data-api on :4101
+	handle /api/* {
+		reverse_proxy 127.0.0.1:4101 {
+			flush_interval -1
+		}
+	}
+
+	handle /v1/* {
+		reverse_proxy 127.0.0.1:4101 {
+			flush_interval -1
+		}
+	}
+
+	handle /.well-known/jwks.json {
+		reverse_proxy 127.0.0.1:4101
+	}
+
+	handle /healthz {
+		reverse_proxy 127.0.0.1:4101
+	}
+
+	# Static frontend — root is /var/www/data
+	handle {
+		root * /var/www/data
+		try_files {path} /index.html
+		file_server
+	}
+
+	header {
+		# basic security headers
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+	}
+
+	log {
+		output file /var/log/caddy/data-supertrucker.log {
+			roll_size 10mb
+			roll_keep 5
+		}
+	}
+}

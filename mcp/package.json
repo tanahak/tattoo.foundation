@@ -1,0 +1,24 @@
+{
+  "name": "tattoo-foundation-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TATTOO Foundation carrier intelligence MCP server (mcp.tattoo.foundation). Foundation is the public publisher; dataset built by Carso Cybernetics on the SuperTrucker platform with query access donated to the Foundation.",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "express": "^4.21.2",
+    "postgres": "^3.4.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

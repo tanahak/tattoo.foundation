@@ -1,0 +1,22 @@
+[Unit]
+Description=TATTOO Foundation carrier intelligence MCP server
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/mcp-tattoo
+EnvironmentFile=/root/supertrucker/db.env
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=4100
+ExecStart=/usr/bin/node /root/mcp-tattoo/dist/server.js
+Restart=on-failure
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=mcp-tattoo
+
+[Install]
+WantedBy=multi-user.target
