@@ -107,10 +107,21 @@ async function renderCarrierCard(c: any) {
       LIMIT 5
     `,
     sql`
-      SELECT filing_type, status, insurer_name, coverage_amount,
+      -- coverage_amount is reported in thousands by FMCSA; multiply for real dollars.
+      -- DISTINCT ON dedupes the legitimate (insurer, policy, date, coverage) duplicates
+      -- present upstream.
+      SELECT filing_type, status, insurer_name,
+             (coverage_amount * 1000)::numeric AS coverage_amount,
              effective_date, cancellation_date
-      FROM insurance_filing
-      WHERE carrier_id = ${c.id}
+      FROM (
+        SELECT DISTINCT ON (filing_type, insurer_name, policy_number, effective_date, coverage_amount)
+               filing_type, status, insurer_name, policy_number,
+               coverage_amount, effective_date, cancellation_date
+        FROM insurance_filing
+        WHERE carrier_id = ${c.id}
+        ORDER BY filing_type, insurer_name, policy_number, effective_date,
+                 coverage_amount, cancellation_date NULLS FIRST
+      ) deduped
       ORDER BY effective_date DESC NULLS LAST
       LIMIT 5
     `,
@@ -288,10 +299,19 @@ export async function carrierInsuranceStatus(args: {
   }
 
   const filings = await sql`
+    -- coverage in real dollars (×1000) + dedupe upstream-duplicate filing rows
     SELECT filing_type, status, insurer_name, policy_number,
-           coverage_amount, effective_date, cancellation_date
-    FROM insurance_filing
-    WHERE carrier_id = ${carrier[0].id}
+           (coverage_amount * 1000)::numeric AS coverage_amount,
+           effective_date, cancellation_date
+    FROM (
+      SELECT DISTINCT ON (filing_type, insurer_name, policy_number, effective_date, coverage_amount)
+             filing_type, status, insurer_name, policy_number,
+             coverage_amount, effective_date, cancellation_date
+      FROM insurance_filing
+      WHERE carrier_id = ${carrier[0].id}
+      ORDER BY filing_type, insurer_name, policy_number, effective_date,
+               coverage_amount, cancellation_date NULLS FIRST
+    ) deduped
     ORDER BY effective_date DESC NULLS LAST
   `;
 
