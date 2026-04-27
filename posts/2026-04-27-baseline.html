@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FMCSA &amp; Labor Changelog — Baseline Snapshot, 2026-04-27</title>
+<meta name="description" content="Baseline snapshot of the carrier-intelligence dataset published by the TATTOO Foundation. FMCSA SAFER, authority history, insurance filings, and DOL H-2B trucking applications.">
+<meta property="og:title" content="FMCSA &amp; Labor Changelog — Baseline Snapshot, 2026-04-27">
+<meta property="og:description" content="Baseline snapshot of the carrier-intelligence dataset published by the TATTOO Foundation. FMCSA SAFER, authority history, insurance filings, and DOL H-2B trucking applications.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-04-27T12:00:00Z">
+<link rel="alternate" type="text/markdown" href="2026-04-27-baseline.md">
+<link rel="canonical" href="https://tattoo.foundation/posts/2026-04-27-baseline.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.7;color:white;
+  background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 50%,#450a0a 100%);min-height:100vh;padding:0 1rem}
+.wrap{max-width:880px;margin:0 auto;padding:3rem 0 5rem}
+header{border-bottom:2px solid rgba(251,191,36,0.3);padding-bottom:1.25rem;margin-bottom:2.5rem;display:flex;
+  justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:1rem}
+header a{color:#fbbf24;text-decoration:none;font-weight:600}
+header a:hover{color:white}
+header .brand{font-size:1.05rem;font-weight:600;color:#fbbf24;text-transform:lowercase;letter-spacing:0.02em}
+h1,h2,h3{color:#fbbf24;font-weight:300;margin:2rem 0 1rem;line-height:1.25;letter-spacing:-0.01em}
+h1{font-size:2.2rem;margin-top:0;font-weight:400}
+h2{font-size:1.4rem;border-bottom:1px solid rgba(251,191,36,0.18);padding-bottom:0.5rem;margin-top:2.5rem}
+h3{font-size:1.1rem;color:rgba(251,191,36,0.85)}
+p{margin:0.75rem 0;color:rgba(255,255,255,0.92)}
+strong{font-weight:600;color:white}
+a{color:#fbbf24;text-decoration:underline;text-underline-offset:3px}
+a:hover{color:white}
+ul{margin:0.5rem 0 1rem 1.25rem;padding-left:0.75rem}
+li{margin:0.4rem 0;color:rgba(255,255,255,0.88);line-height:1.55}
+hr{border:none;border-top:1px dashed rgba(251,191,36,0.3);margin:2rem 0}
+code{background:rgba(0,0,0,0.35);padding:0.1rem 0.45rem;border-radius:4px;font-family:"IBM Plex Mono",monospace;
+  font-size:0.92em;color:#fbbf24}
+.post-card{background:rgba(0,0,0,0.22);border:1px solid rgba(251,191,36,0.25);border-radius:8px;
+  padding:1.5rem 1.5rem;margin-bottom:1rem;display:block;text-decoration:none;color:inherit;transition:all .2s}
+.post-card:hover{border-color:rgba(251,191,36,0.55);transform:translateY(-2px);text-decoration:none}
+.post-card .date{color:rgba(251,191,36,0.7);font-size:0.85rem;font-family:"IBM Plex Mono",monospace}
+.post-card .title{color:#fbbf24;font-size:1.2rem;font-weight:500;margin:0.5rem 0 0.5rem}
+.post-card .desc{color:rgba(255,255,255,0.78);font-size:0.95rem;line-height:1.55}
+.muted{color:rgba(255,255,255,0.6);font-size:0.92rem;font-style:italic}
+.tag{display:inline-block;background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.3);
+  border-radius:999px;padding:0.2rem 0.7rem;font-size:0.78rem;margin:0.15rem 0.2rem 0 0;text-transform:lowercase}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a href="../" class="brand">tattoo.foundation</a>
+  <a href="./">all updates →</a>
+</header>
+<article>
+<h1>FMCSA &amp; Labor Changelog — Baseline Snapshot, 2026-04-27</h1>
+<p><strong>Period:</strong> 2026-04-20 → 2026-04-27 · <strong>Source:</strong> FMCSA SAFER + Authority History + Insurance Filings + DOL OFLC H-2B Disclosure, via the SuperTrucker spine, donated to the TATTOO Foundation.</p>
+<h2>TL;DR</h2>
+<ul>
+<li>5,000 authority events recorded between 2026-04-20 and 2026-04-27.</li>
+<li>2,000 insurance filings touched this period — 397 cancellations, 1,469 new active 91X coverages.</li>
+</ul>
+<h2>Dataset footprint</h2>
+<p>What's currently published through the public TATTOO Foundation MCP (<code>mcp.tattoo.foundation</code>) and the SuperTrucker chat UI (<code>data.supertrucker.ai</code>).</p>
+<ul>
+<li>4,426,945 commercial carriers (full FMCSA SAFER census)</li>
+<li>2,194,522 carriers currently with <strong>Active</strong> authority</li>
+<li>0 carriers flagged <strong>Out-of-Service</strong></li>
+<li>4,673,469 authority-history events (revocations, grants, suspensions, transfers)</li>
+<li>458,975 FMCSA insurance filings (91X / 34 / 84 / 85 / 91, etc.)</li>
+<li>1,056 DOL H-2B trucking applications (SOC 53-30xx)</li>
+</ul>
+<h2>Authority changes</h2>
+<p>5,000 authority events recorded between 2026-04-20 and 2026-04-27. Breakdown: DISCONTINUED REVOCATION (2,215), GRANTED (1,163), REVOKED (1,138), REINSTATED (424), WITHDRAWN (58), OUT OF SERVICE (2).</p>
+<p><strong>Notable revocations / suspensions</strong> (largest fleets first):</p>
+<ul>
+<li><strong>OGM LOGISTICS LLC</strong> — USDOT 4294073, FL — REVOKED (MOTOR PROPERTY COMMON CARRIER) — 2026-04-22 — fleet size 15001</li>
+<li><strong>FERGUSON ENTERPRISES LLC</strong> — USDOT 282018, VA — REVOKED (PROPERTY FREIGHT FORWARDER) — 2026-04-22 — fleet size 4155</li>
+<li><strong>R A H TRANS INC</strong> — USDOT 3832993, IL — DISCONTINUED REVOCATION (COMMON) — 2026-04-20 — fleet size 620</li>
+<li><strong>PRICE RITE TRANSPORT LLC</strong> — USDOT 2531368, IL — DISCONTINUED REVOCATION (COMMON) — 2026-04-21 — fleet size 575</li>
+<li><strong>MAERSK WAREHOUSING &amp; DISTRIBUTION SERVICES USA LLC</strong> — USDOT 1706438, NJ — REVOKED (MOTOR PROPERTY COMMON CARRIER) — 2026-04-22 — fleet size 515</li>
+<li><strong>ALLY EXPRESS LLC</strong> — USDOT 4398527, OH — DISCONTINUED REVOCATION (COMMON) — 2026-04-24 — fleet size 380</li>
+<li><strong>TSX TRUCKING INC</strong> — USDOT 3268655, IL — DISCONTINUED REVOCATION (COMMON) — 2026-04-20 — fleet size 330</li>
+<li><strong>COASTAL TRANSPORT CO INC</strong> — USDOT 36647, TX — DISCONTINUED REVOCATION (COMMON) — 2026-04-22 — fleet size 290</li>
+</ul>
+<p><strong>1,163 new authorities granted this period.</strong></p>
+<p><strong>424 authorities reinstated</strong> after prior revocation.</p>
+<h2>Insurance signals</h2>
+<p>2,000 insurance filings touched this period — 397 cancellations, 1,469 new active 91X coverages.</p>
+<p><strong>Insurance cancellations / lapses</strong> (largest fleets first):</p>
+<ul>
+<li><strong>VL TRUCKING EXPRESS INC</strong> — USDOT 2931850 — 91X Active via STATE NATIONALSPECIALTY INSCO/NATIONAL SPECIA — cancelled 2026-04-27 — coverage was $1,000,000 — fleet 201</li>
+<li><strong>ESTER CARGO INC</strong> — USDOT 3758659 — 91X Active via STATE NATIONALSPECIALTY INSCO/NATIONAL SPECIA — cancelled 2026-05-12 — coverage was $1,000,000 — fleet 135</li>
+<li><strong>PRECISION TRANSPORT &amp; SERVICES LLC</strong> — USDOT 2627690 — 91X Active via UNITED FINANCIAL CASUALTY COMPANY — cancelled 2026-05-07 — coverage was $750,000 — fleet 125</li>
+<li><strong>SEMAN-TOV INC</strong> — USDOT 1149194 — 91X Active via STATE NATIONALSPECIALTY INSCO/NATIONAL SPECIA — cancelled 2026-04-27 — coverage was $1,500,000 — fleet 119</li>
+<li><strong>ALVIL TRUCKING INC</strong> — USDOT 1346895 — 91X Cancelled via NATIONAL UNION FIRE INS. CO. OF PITSBGH. PA — cancelled 2026-04-26 — coverage was $1,000,000 — fleet 110</li>
+<li><strong>TRAIL-TRAC TRANSPORT INC</strong> — USDOT 2899666 — 91X Cancelled via CHEROKEE INSURANCE COMPANY — cancelled 2026-04-25 — coverage was $1,000,000 — fleet 98</li>
+</ul>
+<p><strong>1,469 new active 91X (auto liability) filings</strong> recorded — carriers coming online or rotating insurers.</p>
+<hr>
+<h2>Methodology</h2>
+<p>Data is queried daily from the SuperTrucker spine database (FMCSA SAFER census + authority history + insurance filings + DOL H-2B disclosure data). Posts are auto-generated by <code>@supertrucker/changelog-gen</code>. Filtering targets labor-trafficking, trucking-industry, and freight-brokering signals — not exhaustive coverage. Corrections and tips: tk@tattoo.foundation.</p>
+<p><strong>Try the data yourself:</strong> <a href="https://mcp.tattoo.foundation/mcp"><code>mcp.tattoo.foundation</code></a> (MCP for AI agents) · <a href="https://data.supertrucker.ai"><code>data.supertrucker.ai</code></a> (chat UI for humans). Both free; the Foundation's mission tier is donor-funded and never paywalls driver-protective queries.</p>
+</article>
+<p class="muted" style="margin-top:3rem">Try the data: <a href="https://mcp.tattoo.foundation/mcp">mcp.tattoo.foundation/mcp</a> · <a href="https://data.supertrucker.ai">data.supertrucker.ai</a></p>
+</div>
+</body>
+</html>
