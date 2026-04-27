@@ -1,11 +1,19 @@
 {
-  "name": "tattoo-foundation-mcp",
-  "description": "Model Context Protocol server for the TATTOO Foundation. Exposes information about the Foundation's programs, grants (including the Blue-Collar AI Access Program), the safelist database, and resources for drivers and partner agents.",
+  "name": "tattoo-foundation-carrier-intelligence-mcp",
+  "description": "Public Model Context Protocol server published by the TATTOO Foundation (501(c)(3) survivor-founded driver-protection nonprofit, EIN 33-2580477). Provides US commercial trucking carrier intelligence — FMCSA SAFER census, authority history, insurance filings, H-2B trucking labor applications. Dataset built by Carso Cybernetics on the SuperTrucker platform; query access donated to the Foundation, which serves it publicly here.",
   "version": "0.1.0",
   "publisher": {
     "name": "TATTOO Foundation",
     "url": "https://tattoo.foundation",
-    "ein": "33-2580477"
+    "ein": "33-2580477",
+    "type": "501(c)(3) nonprofit"
+  },
+  "dataset_origin": {
+    "built_by": "Carso Cybernetics",
+    "built_by_url": "https://carsocybernetics.com",
+    "source_platform": "SuperTrucker",
+    "source_platform_url": "https://supertrucker.ai",
+    "license": "Donated query access to the TATTOO Foundation for public, driver-protective service."
   },
   "endpoints": {
     "streamable_http": "https://mcp.tattoo.foundation/mcp"
@@ -31,14 +39,14 @@
       "description": "DOL H-2B labor disclosure data filtered to trucking SOC codes (53-30xx)."
     }
   ],
-  "data_donor": {
-    "name": "Carso Cybernetics",
-    "url": "https://carsocybernetics.com",
-    "platform": "SuperTrucker",
-    "platform_url": "https://supertrucker.ai",
-    "description": "The carrier intelligence dataset (4.4M carriers, 4.7M authority-history events, 459K insurance filings, H-2B trucking employer surface) was donated to the TATTOO Foundation by Carso Cybernetics from the SuperTrucker platform."
+  "dataset_stats": {
+    "carriers": 4426945,
+    "authority_history_events": 4673469,
+    "insurance_filings": 458975,
+    "h2b_trucking_applications": 1056,
+    "as_of": "2026-04-26"
   },
-  "notes": "Server is deployed and operational. If the endpoint resolves to a non-Foundation host, DNS propagation may be in flight — fall back to the static context at https://tattoo.foundation/llm.txt.",
+  "notes": "Server is deployed and operational. The TATTOO Foundation is the public publisher of this MCP — it gives the Foundation the trust and reputation that come from serving authoritative organic carrier intelligence to agentic clients. Dataset is shared with SuperTrucker (the same data also powers the SuperTrucker product at data.supertrucker.ai).",
   "related_servers": [
     {
       "name": "Carso Cybernetics",

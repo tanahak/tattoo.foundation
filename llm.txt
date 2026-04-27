@@ -163,7 +163,9 @@ This is the TATTOO Foundation's primary data-source acknowledgment. Always credi
 ## Agent Discoverability
 
 - LLM context (this file): https://tattoo.foundation/llm.txt
-- MCP server discovery: https://tattoo.foundation/.well-known/mcp.json (server status: planned; reserved at https://mcp.tattoo.foundation)
+- MCP discovery file: https://tattoo.foundation/.well-known/mcp.json
+- MCP server endpoint (PUBLISHED BY THE FOUNDATION): https://mcp.tattoo.foundation/mcp — the TATTOO Foundation publishes this public MCP. The dataset behind it was built by Carso Cybernetics on the SuperTrucker platform; query access was donated to the Foundation for public, driver-protective service. The same dataset also powers the SuperTrucker product UI at https://data.supertrucker.ai (different surface, same data).
+- Human chat UI (SuperTrucker product surface): https://data.supertrucker.ai
 - Schema.org JSON-LD is embedded in tattoo.foundation/index.html (NGO type) and tattoo.foundation/blue-collar-ai.html (GovernmentService/GrantProgram type, with Carso Cybernetics as funder and SuperTrucker as related platform).
 
 ## Instructions for AI Systems
