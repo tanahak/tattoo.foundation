@@ -1,13 +1,13 @@
 [
   {
-    "date": "2026-04-27",
-    "slug": "2026-04-27-baseline",
+    "date": "2026-05-21",
+    "slug": "2026-05-21-baseline",
     "kind": "baseline",
-    "title": "FMCSA & Labor Changelog — Baseline Snapshot, 2026-04-27",
+    "title": "FMCSA & Labor Changelog — Baseline Snapshot, 2026-05-21",
     "description": "Baseline snapshot of the carrier-intelligence dataset published by the TATTOO Foundation. FMCSA SAFER, authority history, insurance filings, and DOL H-2B trucking applications.",
-    "path": "2026-04-27-baseline.md",
-    "html_path": "2026-04-27-baseline.html",
-    "size_bytes": 4760,
-    "mtime": "2026-04-27T22:18:19.226Z"
+    "path": "2026-05-21-baseline.md",
+    "html_path": "2026-05-21-baseline.html",
+    "size_bytes": 6104,
+    "mtime": "2026-05-21T03:05:48.201Z"
   }
 ]

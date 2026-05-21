@@ -1,0 +1,18 @@
+# GitHub Pages / Jekyll config for tattoo.foundation
+#
+# Default Jekyll behavior is to skip files and directories starting with "." or
+# "_" — which means /.well-known/mcp.json (our MCP discovery file used by AI
+# agents) doesn't get served. Whitelist it explicitly here.
+#
+# Also disable Jekyll processing of the /posts directory — those files are
+# auto-generated HTML/MD by @supertrucker/changelog-gen and shouldn't get
+# wrapped in a Jekyll layout.
+
+include:
+  - .well-known
+
+# Keep Jekyll out of the auto-generated changelog directory.
+exclude: []
+
+# Treat /posts as static content, not Jekyll posts.
+collections: {}
