@@ -46,11 +46,37 @@ code{background:rgba(0,0,0,0.35);padding:0.1rem 0.45rem;border-radius:4px;font-f
 </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-  <a href="../" class="brand">tattoo.foundation</a>
-  <a href="./">all updates →</a>
+<style>
+  /* Unified site header — inherited from the main Foundation site so users
+     always have a way back home. */
+  header.site-header { position: fixed; top: 0; width: 100%; background: rgba(26, 32, 44, 0.95); backdrop-filter: blur(20px); color: white; padding: 1rem 0; z-index: 1000; }
+  .site-header .header-content { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  .site-header .logo-main { font-size: 1.6rem; font-weight: 800; background: linear-gradient(135deg, #fbbf24, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; }
+  .site-header nav ul { display: flex; list-style: none; gap: 1.5rem; align-items: center; }
+  .site-header nav a { color: #e2e8f0; text-decoration: none; font-weight: 500; transition: all 0.3s ease; position: relative; border-bottom: none; }
+  .site-header nav a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: #fbbf24; transition: width 0.3s ease; }
+  .site-header nav a:hover::after { width: 100%; }
+  .site-header nav a.active { color: #fbbf24; }
+  .site-header .emergency-btn { background: linear-gradient(135deg, #dc2626, #ef4444); color: white !important; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 700; box-shadow: 0 4px 15px rgba(220,38,38,0.4); font-size: 0.85rem; white-space: nowrap; }
+  @media (max-width: 900px) { .site-header nav ul li.hide-mobile { display: none; } }
+  .wrap { padding-top: 6rem !important; }
+</style>
+<header class="site-header">
+  <div class="header-content">
+    <a href="https://tattoo.foundation/" class="logo-main">T.A.T.T.O.O. Foundation</a>
+    <nav>
+      <ul>
+        <li class="hide-mobile"><a href="https://tattoo.foundation/#programs">programs</a></li>
+        <li class="hide-mobile"><a href="https://tattoo.foundation/blue-collar-ai.html">grants</a></li>
+        <li><a href="./" class="active">blog</a></li>
+        <li class="hide-mobile"><a href="https://tattoo.foundation/sponsorship.html">sponsorship</a></li>
+        <li class="hide-mobile"><a href="https://www.gofundme.com/f/stop-the-exploitation-protect-americas-truckers" target="_blank" rel="noopener">donate</a></li>
+        <li><a href="tel:+12162007447" class="emergency-btn">🆘 Call Rigs 24/7</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
+<div class="wrap">
 <article>
 <h1>FMCSA &amp; Labor Changelog — Baseline Snapshot, 2026-05-21</h1>
 <p><strong>Period:</strong> 2026-05-14 → 2026-05-21 · <strong>Source:</strong> FMCSA SAFER + Authority History + Insurance Filings + DOL OFLC H-2B Disclosure, via the SuperTrucker spine, donated to the TATTOO Foundation.</p>
