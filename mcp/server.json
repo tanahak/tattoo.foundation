@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "foundation.tattoo/carrier-intelligence",
+  "description": "Free US trucking carrier background checks: FMCSA authority, insurance, crashes, inspections, computed BASIC safety scores, and H-2B labor filings across 4.4M carriers. Published by the TATTOO Foundation, a survivor-founded 501(c)(3) fighting labor trafficking in trucking. No signup or key required.",
+  "repository": {
+    "url": "https://github.com/tanahak/tattoo.foundation",
+    "source": "github",
+    "subfolder": "mcp"
+  },
+  "version": "0.2.0",
+  "websiteUrl": "https://tattoo.foundation/lookup.html",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.tattoo.foundation/mcp"
+    }
+  ]
+}
