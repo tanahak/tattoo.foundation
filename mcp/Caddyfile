@@ -18,6 +18,10 @@ mcp.tattoo.foundation {
 		reverse_proxy 127.0.0.1:4100
 	}
 
+	handle /api/* {
+		reverse_proxy 127.0.0.1:4100
+	}
+
 	# MCP endpoint — streamable HTTP. Need long-lived streaming support.
 	handle /mcp* {
 		reverse_proxy 127.0.0.1:4100 {
