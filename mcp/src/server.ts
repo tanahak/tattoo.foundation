@@ -14,11 +14,18 @@ import {
   h2bTruckingEmployers,
   h2bTruckingSchema,
 } from "./tools.js";
+import {
+  carrierSafetyHistory,
+  safetyHistorySchema,
+  carrierSafetyScores,
+  safetyScoresSchema,
+} from "./safety.js";
+import { mountApi } from "./api.js";
 
 function buildServer(): McpServer {
   const server = new McpServer({
     name: "tattoo-foundation",
-    version: "0.1.0",
+    version: "0.2.0",
   });
 
   server.registerTool(
@@ -63,6 +70,28 @@ function buildServer(): McpServer {
       inputSchema: h2bTruckingSchema,
     },
     h2bTruckingEmployers,
+  );
+
+  server.registerTool(
+    "carrier_safety_history",
+    {
+      title: "Carrier crash & inspection history",
+      description:
+        "Crash record and roadside inspection history for a carrier by USDOT number. Returns crash totals (fatalities, injuries, tow-aways, hazmat), out-of-service rates vs national averages, violations broken down by BASIC category, and recent event lists. 24-month inspection window per FMCSA SMS methodology.",
+      inputSchema: safetyHistorySchema,
+    },
+    carrierSafetyHistory,
+  );
+
+  server.registerTool(
+    "carrier_safety_scores",
+    {
+      title: "Carrier BASIC safety scores",
+      description:
+        "Computed BASIC safety percentiles for a carrier by USDOT number — Unsafe Driving, HOS Compliance, Driver Fitness, Controlled Substances, Vehicle Maintenance, Hazmat Compliance. FMCSA SMS-style scores computed independently from public inspection data; flags intervention-threshold breaches. Percentile 0-100, higher = worse.",
+      inputSchema: safetyScoresSchema,
+    },
+    carrierSafetyScores,
   );
 
   return server;
@@ -122,8 +151,10 @@ app.delete("/mcp", async (req, res) => {
   await transports[sessionId].handleRequest(req, res);
 });
 
+mountApi(app);
+
 app.get("/healthz", (_req, res) => {
-  res.json({ ok: true, name: "mcp-tattoo", version: "0.1.0" });
+  res.json({ ok: true, name: "mcp-tattoo", version: "0.2.0" });
 });
 
 app.get("/", (_req, res) => {

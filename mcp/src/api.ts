@@ -39,7 +39,7 @@ function send(res: Response, result: ToolResult) {
 }
 
 export function mountApi(app: Express) {
-  app.options("/api/*path", (req, res) => {
+  app.options("/api/*", (req, res) => {
     cors(req, res);
     res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
     res.status(204).end();
