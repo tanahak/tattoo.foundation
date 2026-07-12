@@ -11,7 +11,7 @@ mcp.tattoo.foundation {
 	# Friendly root and health checks
 	@root path /
 	handle @root {
-		respond "TATTOO Foundation carrier intelligence MCP server.\nMCP endpoint: POST /mcp\nHealth: GET /healthz\nDiscovery: https://tattoo.foundation/.well-known/mcp.json\nDataset built by Carso Cybernetics on the SuperTrucker platform; query access donated to the TATTOO Foundation, which publishes the data here for driver-protective verification.\n" 200
+		reverse_proxy 127.0.0.1:4100
 	}
 
 	handle /healthz {
