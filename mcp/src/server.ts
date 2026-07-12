@@ -20,6 +20,7 @@ import {
   carrierSafetyScores,
   safetyScoresSchema,
 } from "./safety.js";
+import { searchCarriers, searchCarriersSchema } from "./search.js";
 import { mountApi } from "./api.js";
 
 function buildServer(): McpServer {
@@ -92,6 +93,17 @@ function buildServer(): McpServer {
       inputSchema: safetyScoresSchema,
     },
     carrierSafetyScores,
+  );
+
+  server.registerTool(
+    "search_carriers",
+    {
+      title: "Search carriers by criteria",
+      description:
+        "Filter the 4.4M-carrier FMCSA census by fleet size range, authority status, state list or region (southeast/northeast/midwest/southwest/west), cargo classification (e.g. 'Refrigerated'), name substring, and contact-info availability. Returns up to 200 per page with phone/email when on file. For prospecting, market sizing, and building outreach lists.",
+      inputSchema: searchCarriersSchema,
+    },
+    searchCarriers,
   );
 
   return server;

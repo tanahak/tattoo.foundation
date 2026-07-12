@@ -1,6 +1,7 @@
 import type { Express, Request, Response } from "express";
 import { lookupCarrier } from "./tools.js";
 import { carrierSafetyHistory, carrierSafetyScores } from "./safety.js";
+import { searchCarriers, REGIONS } from "./search.js";
 import { sql } from "./db.js";
 
 // Read-only JSON API for the human lookup page at https://tattoo.foundation/lookup.
@@ -89,6 +90,40 @@ export function mountApi(app: Express) {
       });
     } catch (err) {
       console.error("api/carrier error", err);
+      res.status(500).json({ error: "Internal error" });
+    }
+  });
+
+  // GET /api/carriers/search — filtered census search
+  // ?fleet_min=10&fleet_max=100&region=southeast&cargo=Refrigerated&authority=A&limit=100&offset=0
+  app.get("/api/carriers/search", async (req, res) => {
+    cors(req, res);
+    const q = req.query;
+    const region = typeof q.region === "string" ? q.region.toLowerCase() : undefined;
+    if (region && !(region in REGIONS)) {
+      res.status(400).json({ error: `Unknown region. Use: ${Object.keys(REGIONS).join(", ")}` });
+      return;
+    }
+    try {
+      const result = await searchCarriers({
+        fleet_min: q.fleet_min !== undefined ? Number(q.fleet_min) : undefined,
+        fleet_max: q.fleet_max !== undefined ? Number(q.fleet_max) : undefined,
+        authority_status:
+          q.authority === "any" || q.authority === "I" ? (q.authority as "any" | "I") : "A",
+        states:
+          typeof q.states === "string" && q.states.length > 0
+            ? q.states.split(",").map((s) => s.trim().toUpperCase())
+            : undefined,
+        region: region as keyof typeof REGIONS | undefined,
+        cargo_contains: typeof q.cargo === "string" && q.cargo.length >= 3 ? q.cargo : undefined,
+        name_contains: typeof q.name === "string" && q.name.length >= 2 ? q.name : undefined,
+        require_contact: q.require_contact === "1" || q.require_contact === "true",
+        limit: q.limit !== undefined ? Number(q.limit) : 50,
+        offset: q.offset !== undefined ? Number(q.offset) : 0,
+      });
+      send(res, result as ToolResult);
+    } catch (err) {
+      console.error("api/carriers/search error", err);
       res.status(500).json({ error: "Internal error" });
     }
   });
