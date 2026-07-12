@@ -1,0 +1,1750 @@
+{
+  "generated_at": "2026-05-21T03:05:29.887Z",
+  "period_start": "2026-05-14T03:05:29.887Z",
+  "period_end": "2026-05-21T03:05:29.887Z",
+  "flagship_threshold": 70,
+  "counts": {
+    "flagship": 9,
+    "digest": 247,
+    "total_scored": 2200
+  },
+  "flagship_candidates": [
+    {
+      "score": 120,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 1000 +30",
+        "known-parent brand +40"
+      ],
+      "kind": "basic",
+      "carrier_id": "c971c424-5dec-4897-9a91-52990ea7b1c5",
+      "legal_name": "UNITED VAN LINES LLC",
+      "dot_number": "77949",
+      "fleet_size": 4731,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 120,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 1000 +30",
+        "known-parent brand +40"
+      ],
+      "kind": "basic",
+      "carrier_id": "0cce3f1f-7758-4533-a5e3-bba0a77187f5",
+      "legal_name": "ATLAS VAN LINES INC",
+      "dot_number": "125550",
+      "fleet_size": 2731,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 120,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 1000 +30",
+        "known-parent brand +40"
+      ],
+      "kind": "basic",
+      "carrier_id": "cd3ba497-b65d-4e81-8a04-dacf5adc9221",
+      "legal_name": "BRIGHTVIEW LANDSCAPES LLC",
+      "dot_number": "362827",
+      "fleet_size": 1396,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hazmat_compliance, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 120,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 1000 +30",
+        "known-parent brand +40"
+      ],
+      "kind": "basic",
+      "carrier_id": "0df4be1b-0f1e-4f1d-af87-5dbc548a39d0",
+      "legal_name": "NORTH AMERICAN VAN LINES INC",
+      "dot_number": "70851",
+      "fleet_size": 1333,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 120,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 1000 +30",
+        "known-parent brand +40"
+      ],
+      "kind": "basic",
+      "carrier_id": "91908b50-191b-4211-a69f-910c3b987bf1",
+      "legal_name": "ALLIED VAN LINES INC",
+      "dot_number": "76235",
+      "fleet_size": 1056,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 80,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 1000 +30"
+      ],
+      "kind": "basic",
+      "carrier_id": "247a5ade-e3b2-4c5a-9f82-6f31b2a8caa4",
+      "legal_name": "DRIVERDO LLC",
+      "dot_number": "2841522",
+      "fleet_size": 25011,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 80,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 1000 +30"
+      ],
+      "kind": "basic",
+      "carrier_id": "bc7f6488-c7c0-43c3-8cff-c8de4dadfec1",
+      "legal_name": "EVANS DELIVERY COMPANY INC",
+      "dot_number": "38111",
+      "fleet_size": 5445,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 80,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 1000 +30"
+      ],
+      "kind": "basic",
+      "carrier_id": "ebc5146d-e54f-4442-b7ce-de4f64fdbf3d",
+      "legal_name": "KEYSTONE AUTOMOTIVE INDUSTRIES INC",
+      "dot_number": "778752",
+      "fleet_size": 1398,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hazmat_compliance, unsafe_driving"
+      }
+    },
+    {
+      "score": 80,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 1000 +30"
+      ],
+      "kind": "basic",
+      "carrier_id": "983b1c0d-91b7-4e98-a360-6b9852171b02",
+      "legal_name": "W A KENDALL & CO LLC",
+      "dot_number": "359061",
+      "fleet_size": 1251,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, unsafe_driving, vehicle_maintenance"
+      }
+    }
+  ],
+  "digest_top": [
+    {
+      "score": 65,
+      "reasons": [
+        "6 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "9a12e1d4-e612-42cd-9268-c7d3f30691ee",
+      "legal_name": "TMT TRUCKING LLC",
+      "dot_number": "3461561",
+      "fleet_size": 785,
+      "details": {
+        "breach_count": 6,
+        "breach_categories": "controlled_substances, driver_fitness, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "5 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "1f2c1856-4f2e-428a-a2cb-41606c198a8c",
+      "legal_name": "ARL TRANSPORT LLC",
+      "dot_number": "186375",
+      "fleet_size": 755,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "5 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "8b17fa84-b6e7-434e-93cb-54f51dce92c0",
+      "legal_name": "CLOUDTRUCKS LLC",
+      "dot_number": "3300318",
+      "fleet_size": 655,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "5 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "055e9224-6886-48c4-abad-f1bf02de6ca7",
+      "legal_name": "GREATWIDE AMERICAN TRANS-FREIGHT LLC",
+      "dot_number": "753551",
+      "fleet_size": 284,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "5 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "cfa17dbb-0d33-4439-b090-9ba5850f91e4",
+      "legal_name": "TRYTIME TRANSPORT LLC",
+      "dot_number": "1994664",
+      "fleet_size": 200,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "5 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "99c34891-a94d-45a9-af2a-5dee83c580a8",
+      "legal_name": "BIG LEVEL TRUCKING INC",
+      "dot_number": "721704",
+      "fleet_size": 198,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "5 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "920463ad-e0fd-4812-84f2-2704124d685a",
+      "legal_name": "ROCKET EXPD LLC",
+      "dot_number": "576217",
+      "fleet_size": 173,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "5 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "c6be2767-f9e8-4482-8044-130c6fa02b3b",
+      "legal_name": "CLEMENT TRANSPORT LLC",
+      "dot_number": "3371628",
+      "fleet_size": 125,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "5 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "3292c4e5-3d02-4459-8adc-47b194637ca5",
+      "legal_name": "CRENA TRANSPORTATION SERVICES LLC",
+      "dot_number": "3809748",
+      "fleet_size": 100,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "48f571d1-9f01-4b0c-a75f-6016175976a1",
+      "legal_name": "SSL TRUCKING INC",
+      "dot_number": "3927167",
+      "fleet_size": 850,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "492b4407-d947-4058-897d-bd491c2bad76",
+      "legal_name": "WHEATON VAN LINES INC",
+      "dot_number": "70719",
+      "fleet_size": 767,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "29b8c83b-a3a3-45f2-8436-34343cfd0763",
+      "legal_name": "SEI ACQUISITION LLC",
+      "dot_number": "484360",
+      "fleet_size": 600,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "2981cc35-637c-4e29-b67b-6a0f906ca811",
+      "legal_name": "E F CORPORATION",
+      "dot_number": "113693",
+      "fleet_size": 550,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "7bb42472-01c4-4550-9034-ebf7a592cea4",
+      "legal_name": "TOPFLEET INC",
+      "dot_number": "4143821",
+      "fleet_size": 500,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "549af949-5afc-4a51-8f34-ab08f8c4d33c",
+      "legal_name": "ARAVAN CARGO INC",
+      "dot_number": "3139125",
+      "fleet_size": 473,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "fc720b86-3571-4ac4-8d12-dc1a97e3f92d",
+      "legal_name": "KENT POWER INC",
+      "dot_number": "2256247",
+      "fleet_size": 470,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "6cab3878-8cb0-477f-a6a0-59df9c31f9d4",
+      "legal_name": "BILLOR US TRANSPORT LLC",
+      "dot_number": "3749157",
+      "fleet_size": 467,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "417d2744-ed85-4381-991e-e50a416d9bbf",
+      "legal_name": "AMBER EXPRESS LLC",
+      "dot_number": "4194670",
+      "fleet_size": 435,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "3b76948b-a17f-4821-8727-cc1a20b332da",
+      "legal_name": "VANNER INC",
+      "dot_number": "3048083",
+      "fleet_size": 421,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "94316c77-2bdd-482b-b867-4d1f739c30e2",
+      "legal_name": "E-TRANSPORT CARRIERS LLC",
+      "dot_number": "1067244",
+      "fleet_size": 406,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "567aaf9e-727f-4eeb-aae5-9de8bc7457d5",
+      "legal_name": "DELTA PRIME LLC",
+      "dot_number": "3495676",
+      "fleet_size": 395,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "d4e4fc06-fa1e-4286-9df5-8ad586f878bf",
+      "legal_name": "AFS WORLD LLC",
+      "dot_number": "3168296",
+      "fleet_size": 386,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hazmat_compliance, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "04194e65-b303-43e8-8153-3b42d80bf7b5",
+      "legal_name": "BKFS LOGISTICS INC",
+      "dot_number": "2407694",
+      "fleet_size": 386,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "b6a9b6e6-1f59-4589-a5d6-a016e746f313",
+      "legal_name": "S&D GLOBAL LLC",
+      "dot_number": "3867923",
+      "fleet_size": 366,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "a4ff94cc-42bf-4fe8-b19d-44c3fcd77def",
+      "legal_name": "DEADHEAD TRUCKING LLC",
+      "dot_number": "3689437",
+      "fleet_size": 341,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "338cfebd-efe1-4b5d-99e4-6ba1a8084871",
+      "legal_name": "SMT TRANS LLC",
+      "dot_number": "3515574",
+      "fleet_size": 335,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "ceaf24b4-4243-4c3f-a3a4-0e905cf4a864",
+      "legal_name": "KG LINE GROUP INCORPORATED",
+      "dot_number": "3487333",
+      "fleet_size": 310,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "05ed855f-2ae6-41ba-93a0-2c2fa4fa9c25",
+      "legal_name": "THE SCRUGGS COMPANY",
+      "dot_number": "29540",
+      "fleet_size": 306,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "10209467-987f-4e60-9c20-83c9cba31ed7",
+      "legal_name": "SKYFREE INC",
+      "dot_number": "3783546",
+      "fleet_size": 305,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "576880d3-5169-4d2f-8ea6-50aa204e3444",
+      "legal_name": "STANDARD FORWARDING LLC",
+      "dot_number": "1996747",
+      "fleet_size": 302,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "fe7f6266-795e-4be2-ab2d-1d17feda27d1",
+      "legal_name": "R & M FREIGHT INC",
+      "dot_number": "1091106",
+      "fleet_size": 301,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hazmat_compliance, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "5d2eaaa0-501d-4f34-b10d-b543dead28d9",
+      "legal_name": "FREIGHTSTAR EXPEDITED LLC",
+      "dot_number": "2020842",
+      "fleet_size": 301,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "b4ec4b06-900f-49ed-95c8-36b85d219c1d",
+      "legal_name": "VERITA TELECOMMUNICATIONS CORPORATION",
+      "dot_number": "2884289",
+      "fleet_size": 270,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "37c14e3c-8d73-4c7f-befb-cb0b24fc316c",
+      "legal_name": "CATASHOV INC",
+      "dot_number": "3256177",
+      "fleet_size": 263,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "fb6449f4-8359-48f8-93f4-c5b9e7ce90bb",
+      "legal_name": "AD EXPRESS TRUCKING LLC",
+      "dot_number": "3066495",
+      "fleet_size": 255,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "11d98d64-c3bc-4566-a195-a81914d98abd",
+      "legal_name": "ROBERT L GAST INC",
+      "dot_number": "706981",
+      "fleet_size": 252,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "24271486-90fe-419c-8ca9-6570beb51938",
+      "legal_name": "GLOBAL INDUSTRIAL SERVICES INC",
+      "dot_number": "1759449",
+      "fleet_size": 250,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "013dd01f-b454-4ca2-b414-ccbaf1ec64c4",
+      "legal_name": "TIMEIT LOGISTICS LLC",
+      "dot_number": "3615357",
+      "fleet_size": 243,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "8566302c-51b3-40f8-8312-5f81df38062a",
+      "legal_name": "VIS INC",
+      "dot_number": "3842928",
+      "fleet_size": 230,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "f0415283-3a20-4011-ad53-4d14ebdc4c50",
+      "legal_name": "ASPHALT SURFACE TECHNOLOGIES CORP",
+      "dot_number": "355908",
+      "fleet_size": 224,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hazmat_compliance, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "87c45c48-066f-4c48-be48-65bc92660c96",
+      "legal_name": "SCARSELLA BROTHERS INC",
+      "dot_number": "450261",
+      "fleet_size": 220,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hazmat_compliance, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "5786579c-7231-4e28-b15f-84f4b1b52741",
+      "legal_name": "PATRICK INDUSTRIES",
+      "dot_number": "93791",
+      "fleet_size": 209,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hazmat_compliance, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "31240e4d-0194-43b9-9238-89c45049e661",
+      "legal_name": "COVAN WORLD-WIDE MOVING INCORPORATED",
+      "dot_number": "256677",
+      "fleet_size": 208,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "ad4acada-21e9-4d2d-8399-3507c79cae3d",
+      "legal_name": "VL TRUCKING EXPRESS INC",
+      "dot_number": "2931850",
+      "fleet_size": 201,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "d69d650d-2040-4819-8b91-6ddf4c28e572",
+      "legal_name": "WINDY CITY NATIONAL TRANS INC",
+      "dot_number": "2107840",
+      "fleet_size": 200,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "2207420e-c5db-4ae5-95fc-52b326a2fa8a",
+      "legal_name": "TWIN CARRIER LLC",
+      "dot_number": "3518735",
+      "fleet_size": 200,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "a6e42e8a-bc27-4741-8c7e-75b6bd324f9f",
+      "legal_name": "HORIZON SOUTH INC",
+      "dot_number": "2318070",
+      "fleet_size": 191,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "d315c17a-9420-4abe-b2ad-49fe6801d711",
+      "legal_name": "LIGHTSPEED CONSTRUCTION GROUP LLC",
+      "dot_number": "3741394",
+      "fleet_size": 187,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "adb28101-fa62-442f-a279-ad8331fd4f0c",
+      "legal_name": "CENTRAL SPECIALTIES INC",
+      "dot_number": "607094",
+      "fleet_size": 180,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hazmat_compliance, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "8f6d8270-9ca4-4174-a158-371fdc3bad0b",
+      "legal_name": "MORGAN INDUSTRIES INC",
+      "dot_number": "762515",
+      "fleet_size": 171,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "71e83919-cd4c-4aca-a143-0cf9d572104b",
+      "legal_name": "AMERICAN CARRIER TRANSPORT LLC",
+      "dot_number": "1143006",
+      "fleet_size": 168,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "1b3cab12-8fb9-4b3d-844c-db673d2c0571",
+      "legal_name": "ZERO11 FREIGHT INC",
+      "dot_number": "3602389",
+      "fleet_size": 162,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "d43fe751-ca2f-4bb5-984f-2a8d137efdab",
+      "legal_name": "KJ MEDELEZ LLC",
+      "dot_number": "3901078",
+      "fleet_size": 157,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "4e4b6d0b-9953-46b8-939a-d90e8b6387a7",
+      "legal_name": "NEXUS COOPERATIVE",
+      "dot_number": "299549",
+      "fleet_size": 157,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hazmat_compliance, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "76a5dc94-86a1-4b3f-ad39-dd2634da13c4",
+      "legal_name": "FROST FREIGHT INC",
+      "dot_number": "1540868",
+      "fleet_size": 155,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "1f136818-9c32-4f27-ae7b-bf791a91199f",
+      "legal_name": "SPATCO ENERGY SOLUTIONS LLC",
+      "dot_number": "3502882",
+      "fleet_size": 152,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "50e0a24f-d88c-43d2-a659-2fd2f4ec494d",
+      "legal_name": "ANDI GROUP TRUCKING INC",
+      "dot_number": "2596750",
+      "fleet_size": 148,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "f84e3642-446c-4845-bea1-1aa2201312ff",
+      "legal_name": "L L PELLING CO INC",
+      "dot_number": "725553",
+      "fleet_size": 148,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hazmat_compliance, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "5d9e15f9-f5b8-40dc-a022-3f01b0cd4918",
+      "legal_name": "THE GEORGIA EROSION CONTROL CENTER LLC",
+      "dot_number": "1034577",
+      "fleet_size": 148,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "4acd23f9-9117-4dd1-93ec-ec6aeafdf611",
+      "legal_name": "MAX POWER TRANSPORT INC",
+      "dot_number": "2724602",
+      "fleet_size": 147,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "b8fc3afa-ab54-4ae2-b46c-ee85974a35df",
+      "legal_name": "VTI TRANSPORT LLC",
+      "dot_number": "2076983",
+      "fleet_size": 145,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "2367cf78-aeb5-42f0-ba9c-b11c5ce8d9f5",
+      "legal_name": "ANTLER TRANSPORT LLC",
+      "dot_number": "951978",
+      "fleet_size": 143,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "49558a8c-a170-4c6d-9b40-daf8578004da",
+      "legal_name": "PROCARE LANDSCAPE MANAGEMENT INC",
+      "dot_number": "1675542",
+      "fleet_size": 141,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "d570e775-30f6-413f-aa38-d07b4becd69a",
+      "legal_name": "GENESIS ENDEAVORS LLC",
+      "dot_number": "2283956",
+      "fleet_size": 139,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "b5fa7569-fa03-498f-ac40-d05c23501e32",
+      "legal_name": "SHAFER CONTRACTING COMPANY INC",
+      "dot_number": "268720",
+      "fleet_size": 137,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hazmat_compliance, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "159c1358-9275-4f02-a987-68861d847653",
+      "legal_name": "TRANSPORTES SOTO E HIJOS S A DE C V",
+      "dot_number": "824454",
+      "fleet_size": 136,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hazmat_compliance, hours_of_service, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "ecca7021-3fbb-45d4-b624-f73b41369f5d",
+      "legal_name": "UNITED S INC",
+      "dot_number": "3181638",
+      "fleet_size": 135,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "f1d266d8-ba19-4f49-bdcf-91f90fce2c1d",
+      "legal_name": "GRASSHOPPER TRUCKING LLC",
+      "dot_number": "3225405",
+      "fleet_size": 133,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "414c059d-bf08-44bb-ae72-efc226a26281",
+      "legal_name": "UNIVERSITY CORP",
+      "dot_number": "200236",
+      "fleet_size": 132,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "1a38b4c9-9613-43da-adde-74f41555fc40",
+      "legal_name": "GROUNDWORKS FRS LLC",
+      "dot_number": "3247744",
+      "fleet_size": 131,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "360709ac-7acd-4617-ad7f-b1327996adf3",
+      "legal_name": "ALABAMA FOUNDATION SPECIALISTS OF BIRMINGHAM INC",
+      "dot_number": "1607702",
+      "fleet_size": 129,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "1936ffde-2783-4072-be93-4b9390043b7a",
+      "legal_name": "XTREME LOAD LLC",
+      "dot_number": "4501224",
+      "fleet_size": 124,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "3cdf63b9-6fd2-4a76-8510-6f8ed3e012f2",
+      "legal_name": "BLACKSTONE EXCLUSIVE INC",
+      "dot_number": "4047329",
+      "fleet_size": 123,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "c082807b-ed65-4a6e-bbca-10afc40b860f",
+      "legal_name": "MARBADA LOGISTICS INC",
+      "dot_number": "4205925",
+      "fleet_size": 120,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "f4c4caba-3154-41ab-b4a0-03b7f8b35733",
+      "legal_name": "ASR TRANSPORT LLC",
+      "dot_number": "3657524",
+      "fleet_size": 120,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "3811cc7d-1f84-4e55-bc7d-7afb26a10660",
+      "legal_name": "KAVKAZ EXPRESS LLC",
+      "dot_number": "2523965",
+      "fleet_size": 116,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "3a284c2b-8d44-4603-a26b-18463b8c582b",
+      "legal_name": "EASY AND QUICK TRANS INC",
+      "dot_number": "2330289",
+      "fleet_size": 115,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "a361847a-33da-40f9-aa89-187c3e9e6b06",
+      "legal_name": "X TRANS INC",
+      "dot_number": "1680133",
+      "fleet_size": 110,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "6baa6934-1c88-4d6d-bc08-42472e43506a",
+      "legal_name": "INLAND FRESH SEAFOOD CORPORATION OF AMERICA INC",
+      "dot_number": "261533",
+      "fleet_size": 110,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "ecaf9ac1-a44f-4bf2-898b-625499adee58",
+      "legal_name": "ANSOR EXPRESS LLC",
+      "dot_number": "3176383",
+      "fleet_size": 105,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hazmat_compliance, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "236a02a4-7d87-4604-9a31-1ffcc6cc78db",
+      "legal_name": "CAPITAL CITY TRUCKING LLC",
+      "dot_number": "1972184",
+      "fleet_size": 104,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "be386d30-ae54-470c-848d-60a6e922ce41",
+      "legal_name": "R B HUMPHREYS INC",
+      "dot_number": "55512",
+      "fleet_size": 101,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "cc2ad0b1-77e6-4299-af63-6e61ff5b0ab3",
+      "legal_name": "DHALIWAL BROTHERS TRUCKING INC",
+      "dot_number": "2305079",
+      "fleet_size": 100,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "df7cb27b-4a99-4a28-8a0f-31c0d3790bc0",
+      "legal_name": "MICROFREIGHT LOGISTIC LLC",
+      "dot_number": "3245690",
+      "fleet_size": 100,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "520eed10-c532-491d-9182-716313ccd983",
+      "legal_name": "GONCO LOGISTICS LLC",
+      "dot_number": "3057362",
+      "fleet_size": 100,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 65,
+      "reasons": [
+        "4 BASIC breaches +50",
+        "fleet >= 100 +15"
+      ],
+      "kind": "basic",
+      "carrier_id": "d53a2f2a-c61d-4cca-a2cc-4cf62e1f7024",
+      "legal_name": "SAMAX EXPRESS INC",
+      "dot_number": "2457309",
+      "fleet_size": 100,
+      "details": {
+        "breach_count": 4,
+        "breach_categories": "driver_fitness, hazmat_compliance, hours_of_service, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "6 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "9ecd2207-e198-4bc8-b40c-d76cae3ac001",
+      "legal_name": "ALL GOOD TRUCKING LLC",
+      "dot_number": "3641869",
+      "fleet_size": 35,
+      "details": {
+        "breach_count": 6,
+        "breach_categories": "controlled_substances, driver_fitness, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "d57d1541-b530-42b7-ad36-60b053a05894",
+      "legal_name": "LAND OF LIGHT TRANSPORT LLC",
+      "dot_number": "3701071",
+      "fleet_size": 97,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "bb70a43e-bd25-4308-9d1e-00a38d0c3002",
+      "legal_name": "A M S LOGISTICS LLC",
+      "dot_number": "3971911",
+      "fleet_size": 94,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "5bf2cee5-6845-4e59-b69a-75401670aecb",
+      "legal_name": "TAMERLANE EXPRESS INC",
+      "dot_number": "3302117",
+      "fleet_size": 90,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "54a2b239-62ce-4628-91bf-dfca7f87be54",
+      "legal_name": "BASIC TRANSPORT LLC",
+      "dot_number": "2141830",
+      "fleet_size": 90,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "25a82b77-9ec1-4371-8c5d-06bb8fb3ed0a",
+      "legal_name": "SPEED TRANS LLC",
+      "dot_number": "2292170",
+      "fleet_size": 84,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "8f257077-b7af-43cd-a08b-d51ea5dcbf64",
+      "legal_name": "CRYSTAL TRUCKING INC",
+      "dot_number": "1165156",
+      "fleet_size": 84,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "56ff985b-fffd-4785-8235-0575873dbe46",
+      "legal_name": "DETA LOGISTICS LLC",
+      "dot_number": "2994337",
+      "fleet_size": 80,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hazmat_compliance, hours_of_service, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "61a63924-38ba-4a71-b145-bb3fd1a8b31e",
+      "legal_name": "B&D CONCRETE CUTTING INC",
+      "dot_number": "1015586",
+      "fleet_size": 79,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "141c8d67-116f-446d-a2b0-e379fe16c352",
+      "legal_name": "DIRECT BUSINESS HOLDINGS INC",
+      "dot_number": "4200881",
+      "fleet_size": 76,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "b73846e5-9878-4eda-9cc7-fcd0ae7746ed",
+      "legal_name": "JUST IN TIME SYSTEMS LLC",
+      "dot_number": "2877393",
+      "fleet_size": 76,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "72814d43-4ec9-4f17-b08c-09b8d57e8012",
+      "legal_name": "PANAMERICAN FREIGHTS LLC",
+      "dot_number": "2877273",
+      "fleet_size": 62,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "driver_fitness, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "a0448718-3f12-4890-8df7-05ac69dedde0",
+      "legal_name": "DEANDA TRANSPORT LLC",
+      "dot_number": "2956928",
+      "fleet_size": 61,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    },
+    {
+      "score": 50,
+      "reasons": [
+        "5 BASIC breaches +50"
+      ],
+      "kind": "basic",
+      "carrier_id": "1be4c4b8-24ab-4ff2-a6ec-fbf92e460000",
+      "legal_name": "IRON WHEEL ENERGY SERVICES LLC",
+      "dot_number": "3476160",
+      "fleet_size": 60,
+      "details": {
+        "breach_count": 5,
+        "breach_categories": "controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance"
+      }
+    }
+  ]
+}

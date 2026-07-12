@@ -3,64 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FMCSA & Labor Changelog — TATTOO Foundation</title>
-<meta name="description" content="Auto-generated weekly digest of carrier intelligence: FMCSA authority changes, insurance signals, and DOL H-2B trucking applications. Filtered to labor, trucking, and freight-brokering signals.">
-<meta property="og:title" content="FMCSA & Labor Changelog — TATTOO Foundation">
-<meta property="og:description" content="Curated weekly carrier intelligence digest from the TATTOO Foundation.">
+<title>Blog — TATTOO Foundation</title>
+<meta name="description" content="Investigations and news from the TATTOO Foundation, drawn from FMCSA, DOL, and federal court public records on the SuperTrucker carrier-intelligence spine.">
+<meta property="og:title" content="Blog — TATTOO Foundation">
+<meta property="og:description" content="Investigations and news from the TATTOO Foundation, drawn from FMCSA, DOL, and federal court public records.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://tattoo.foundation/posts/">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.7;color:white;
-  background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 50%,#450a0a 100%);min-height:100vh;padding:0 1rem}
-.wrap{max-width:880px;margin:0 auto;padding:3rem 0 5rem}
-header{border-bottom:2px solid rgba(251,191,36,0.3);padding-bottom:1.25rem;margin-bottom:2.5rem;display:flex;
-  justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:1rem}
-header a{color:#fbbf24;text-decoration:none;font-weight:600}
-header a:hover{color:white}
-header .brand{font-size:1.05rem;font-weight:600;color:#fbbf24;text-transform:lowercase;letter-spacing:0.02em}
-h1,h2,h3{color:#fbbf24;font-weight:300;margin:2rem 0 1rem;line-height:1.25;letter-spacing:-0.01em}
-h1{font-size:2.2rem;margin-top:0;font-weight:400}
-h2{font-size:1.4rem;border-bottom:1px solid rgba(251,191,36,0.18);padding-bottom:0.5rem;margin-top:2.5rem}
-h3{font-size:1.1rem;color:rgba(251,191,36,0.85)}
-p{margin:0.75rem 0;color:rgba(255,255,255,0.92)}
-strong{font-weight:600;color:white}
-a{color:#fbbf24;text-decoration:underline;text-underline-offset:3px}
-a:hover{color:white}
-ul{margin:0.5rem 0 1rem 1.25rem;padding-left:0.75rem}
-li{margin:0.4rem 0;color:rgba(255,255,255,0.88);line-height:1.55}
-hr{border:none;border-top:1px dashed rgba(251,191,36,0.3);margin:2rem 0}
-code{background:rgba(0,0,0,0.35);padding:0.1rem 0.45rem;border-radius:4px;font-family:"IBM Plex Mono",monospace;
-  font-size:0.92em;color:#fbbf24}
-.post-card{background:rgba(0,0,0,0.22);border:1px solid rgba(251,191,36,0.25);border-radius:8px;
-  padding:1.5rem 1.5rem;margin-bottom:1rem;display:block;text-decoration:none;color:inherit;transition:all .2s}
-.post-card:hover{border-color:rgba(251,191,36,0.55);transform:translateY(-2px);text-decoration:none}
-.post-card .date{color:rgba(251,191,36,0.7);font-size:0.85rem;font-family:"IBM Plex Mono",monospace}
-.post-card .title{color:#fbbf24;font-size:1.2rem;font-weight:500;margin:0.5rem 0 0.5rem}
-.post-card .desc{color:rgba(255,255,255,0.78);font-size:0.95rem;line-height:1.55}
-.muted{color:rgba(255,255,255,0.6);font-size:0.92rem;font-style:italic}
-.tag{display:inline-block;background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.3);
-  border-radius:999px;padding:0.2rem 0.7rem;font-size:0.78rem;margin:0.15rem 0.2rem 0 0;text-transform:lowercase}
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.7; color: white; background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 50%, #450a0a 100%); min-height: 100vh; }
+  header.site-header { position: fixed; top: 0; width: 100%; background: rgba(26, 32, 44, 0.95); backdrop-filter: blur(20px); color: white; padding: 1rem 0; z-index: 1000; }
+  .header-content { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  .logo-main { font-size: 1.4rem; font-weight: 800; background: linear-gradient(135deg, #fbbf24, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none; white-space: nowrap; }
+  nav ul { display: flex; list-style: none; gap: 1.5rem; align-items: center; }
+  nav a { color: #e2e8f0; text-decoration: none; font-weight: 500; position: relative; }
+  nav a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: #fbbf24; transition: width 0.3s ease; }
+  nav a:hover::after { width: 100%; }
+  nav a.active { color: #fbbf24; }
+  .emergency-btn { background: linear-gradient(135deg, #dc2626, #ef4444); color: white !important; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 700; box-shadow: 0 4px 15px rgba(220,38,38,0.4); font-size: 0.85rem; white-space: nowrap; }
+  @media (max-width: 900px) { nav ul li.hide-mobile { display: none; } }
+  main { max-width: 980px; margin: 0 auto; padding: 7rem 1.5rem 5rem; }
+  h1 { color: #fbbf24; font-size: 2.6rem; font-weight: 400; margin-bottom: 1rem; letter-spacing: -0.02em; }
+  .intro { color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 700px; margin-bottom: 2.5rem; }
+  .tag { display: inline-block; background: rgba(251,191,36,0.12); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); border-radius: 999px; padding: 0.25rem 0.8rem; font-size: 0.8rem; margin: 0.2rem 0.3rem 0 0; text-transform: lowercase; }
+  h2.section { color: #fbbf24; font-size: 1.5rem; font-weight: 500; margin: 3rem 0 1.25rem; border-bottom: 1px solid rgba(251,191,36,0.2); padding-bottom: 0.5rem; }
+  .post-card { background: rgba(0,0,0,0.25); border: 1px solid rgba(251,191,36,0.3); border-radius: 12px; padding: 1.75rem; margin-bottom: 1.25rem; display: block; text-decoration: none; color: inherit; transition: all 0.25s; }
+  .post-card:hover { border-color: rgba(251,191,36,0.7); transform: translateY(-3px); box-shadow: 0 10px 35px rgba(0,0,0,0.4); }
+  .post-card .kicker { font-size: 0.75rem; color: rgba(251,191,36,0.85); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; }
+  .post-card .date { color: rgba(251,191,36,0.65); font-size: 0.85rem; font-family: ui-monospace, monospace; }
+  .post-card .title { color: #fbbf24; font-size: 1.4rem; font-weight: 500; line-height: 1.25; margin: 0.5rem 0 0.75rem; }
+  .post-card .desc { color: rgba(255,255,255,0.82); font-size: 1rem; line-height: 1.55; }
+  .post-card.flagship { background: linear-gradient(135deg, rgba(251,191,36,0.12), rgba(245,158,11,0.08)); border: 2px solid rgba(251,191,36,0.55); }
+  .post-card.flagship .kicker { color: #fbbf24; }
+  .muted { color: rgba(255,255,255,0.6); font-size: 0.92rem; font-style: italic; }
+  .meta { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px dashed rgba(251,191,36,0.25); }
+  .meta a { color: #fbbf24; }
+  .empty { color: rgba(255,255,255,0.6); font-style: italic; padding: 1.5rem; background: rgba(0,0,0,0.15); border-radius: 12px; border: 1px dashed rgba(251,191,36,0.2); }
 </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-  <a href="../" class="brand">tattoo.foundation</a>
-  <a href="../blue-collar-ai.html">grants</a>
+
+<header class="site-header">
+  <div class="header-content">
+    <a href="https://tattoo.foundation/" class="logo-main">T.A.T.T.O.O. Foundation</a>
+    <nav>
+      <ul>
+        <li class="hide-mobile"><a href="https://tattoo.foundation/#programs">programs</a></li>
+        <li class="hide-mobile"><a href="https://tattoo.foundation/blue-collar-ai.html">grants</a></li>
+        <li><a href="./" class="active">blog</a></li>
+        <li class="hide-mobile"><a href="https://tattoo.foundation/sponsorship.html">sponsorship</a></li>
+        <li class="hide-mobile"><a href="https://www.gofundme.com/f/stop-the-exploitation-protect-americas-truckers" target="_blank" rel="noopener">donate</a></li>
+        <li><a href="tel:+12162007447" class="emergency-btn">🆘 Call Rigs 24/7</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
-<h1>FMCSA &amp; Labor Changelog</h1>
-<p>Auto-generated digest of authority changes, insurance signals, and H-2B trucking labor applications, filtered to labor, trucking, and freight-brokering signals. Built by Carso Cybernetics on the SuperTrucker platform; query access donated to the TATTOO Foundation, which publishes here for free public use.</p>
-<p>
-  <span class="tag">fmcsa</span><span class="tag">authority</span><span class="tag">insurance</span><span class="tag">h-2b</span><span class="tag">labor</span><span class="tag">freight-brokering</span><span class="tag">trucking</span>
-</p>
-<h2 style="margin-top:2.5rem">recent updates</h2>
-<a class="post-card" href="2026-04-27-baseline.html">
-  <div class="date">2026-04-27</div>
-  <div class="title">FMCSA &amp; Labor Changelog — Baseline Snapshot, 2026-04-27</div>
-  <div class="desc">Baseline snapshot of the carrier-intelligence dataset published by the TATTOO Foundation. FMCSA SAFER, authority history, insurance filings, and DOL H-2B trucking applications.</div>
-</a>
-<p class="muted" style="margin-top:3rem">Subscribe to updates: follow <a href="https://tattoo.foundation/.well-known/mcp.json">mcp.json</a> · query the data at <a href="https://mcp.tattoo.foundation/mcp">mcp.tattoo.foundation/mcp</a> · chat with the data at <a href="https://data.supertrucker.ai">data.supertrucker.ai</a></p>
-</div>
+
+<main>
+  <h1>The Blog</h1>
+  <p class="intro">Investigations and news, drawn from FMCSA, DOL Wage &amp; Hour, federal court filings, and other public records on the SuperTrucker carrier-intelligence spine donated to the Foundation by Carso Cybernetics. All facts traceable to public-record source rows. Corrections and tips: <a href="mailto:tk@tattoo.foundation" style="color:#fbbf24;">tk@tattoo.foundation</a>.</p>
+  <p>
+    <span class="tag">enforcement</span><span class="tag">labor</span><span class="tag">wage-theft</span><span class="tag">freight-broker</span><span class="tag">fmcsa</span><span class="tag">trafficking</span><span class="tag">h-2b</span>
+  </p>
+
+  <h2 class="section">Investigations</h2>
+    <a class="post-card flagship" href="2026-05-22-household-movers-basic-breach.html">
+    <div class="kicker">Investigation · Carrier Safety</div>
+    <div class="date">2026-05-22</div>
+    <div class="title">Four of America's Best-Known Moving Companies Are Failing FMCSA Safety Standards Right Now</div>
+    <div class="desc">United, Atlas, North American, and Allied Van Lines — the household names of household moving — are all currently tripping FMCSA's intervention thresholds in four of six safety categories simultaneously, according to the agency's own public SMS data.</div>
+  </a>
+
+  <h2 class="section">News</h2>
+    <a class="post-card" href="2026-05-26-federal-express-labor-lawsuit.html">
+    <div class="kicker">News · Auto-drafted</div>
+    <div class="date">2026-06-16</div>
+    <div class="title">Federal Express Corporation faces labor lawsuit</div>
+    <div class="desc">Brian Slaboda sues FEDERAL EXPRESS CORPORATION for alleged Fair Labor Standards Act violations</div>
+  </a>
+  <a class="post-card" href="2026-05-29-federal-express-corp-labor-lawsuit.html">
+    <div class="kicker">News · Auto-drafted</div>
+    <div class="date">2026-06-16</div>
+    <div class="title">Duane Mayfield sues Federal Express Corporation over labor claims</div>
+    <div class="desc">A lawsuit alleging labor violations was filed against Federal Express Corporation</div>
+  </a>
+  <a class="post-card" href="2026-06-01-federal-express-labor-lawsuit.html">
+    <div class="kicker">News · Auto-drafted</div>
+    <div class="date">2026-06-16</div>
+    <div class="title">Douglas Shinker sues Federal Express Corporation over labor practices</div>
+    <div class="desc">A lawsuit filed on June 1, 2026, alleges Fair Labor Standards Act violations against Federal Express Corporation.</div>
+  </a>
+  <a class="post-card" href="2026-06-01-williams-sues-federal-express.html">
+    <div class="kicker">News · Auto-drafted</div>
+    <div class="date">2026-06-16</div>
+    <div class="title">Kevin Williams sues Federal Express Corporation</div>
+    <div class="desc">A complaint filed in the Southern District of Illinois court alleges wage issues against Federal Express Corporation</div>
+  </a>
+  <a class="post-card" href="2026-05-22-walker-v-federal-express.html">
+    <div class="kicker">News · Auto-drafted</div>
+    <div class="date">2026-06-16</div>
+    <div class="title">Richard Walker sues Federal Express Corporation</div>
+    <div class="desc">Walker alleges Fair Labor Standards Act violations against Federal Express Corporation</div>
+  </a>
+
+  <h2 class="section">Weekly data digests</h2>
+    <a class="post-card" href="2026-05-21-baseline.html">
+    <div class="kicker">Data digest · Auto-generated</div>
+    <div class="date">2026-05-21</div>
+    <div class="title">FMCSA &amp; Labor Changelog — Baseline Snapshot, 2026-05-21</div>
+    <div class="desc">Baseline snapshot of the carrier-intelligence dataset: 4.4M carriers, 4.7M authority-history events, 459K insurance filings, 1,056 H-2B trucking applications, 3.5M crash records, 3.2M BASIC safety scores, 32K brokers. Auto-generated by @supertrucker/changelog-gen — facts only, no narrative.</div>
+  </a>
+
+  <div class="meta">
+    <p class="muted">The news feed is drafted autonomously from public records (CourtListener, FMCSA, DOL WHD). Items are scored against named subjects, dollar amounts, driver-impact, and source authority; only those clearing the editorial threshold get drafted. Corrections to specific posts: <a href="mailto:tk@tattoo.foundation">tk@tattoo.foundation</a>.</p>
+    <p class="muted" style="margin-top: 0.85rem;">Subscribe by following <a href="../.well-known/mcp.json">mcp.json</a> · query the data at <a href="https://mcp.tattoo.foundation/mcp">mcp.tattoo.foundation/mcp</a></p>
+  </div>
+</main>
+
 </body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FMCSA &amp; Labor Changelog — Baseline Snapshot, 2026-05-21</title>
+<meta name="description" content="Baseline snapshot of the carrier-intelligence dataset published by the TATTOO Foundation. FMCSA SAFER, authority history, insurance filings, and DOL H-2B trucking applications.">
+<meta property="og:title" content="FMCSA &amp; Labor Changelog — Baseline Snapshot, 2026-05-21">
+<meta property="og:description" content="Baseline snapshot of the carrier-intelligence dataset published by the TATTOO Foundation. FMCSA SAFER, authority history, insurance filings, and DOL H-2B trucking applications.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-05-21T12:00:00Z">
+<link rel="alternate" type="text/markdown" href="2026-05-21-baseline.md">
+<link rel="canonical" href="https://tattoo.foundation/posts/2026-05-21-baseline.html">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.7;color:white;
+  background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 50%,#450a0a 100%);min-height:100vh;padding:0 1rem}
+.wrap{max-width:880px;margin:0 auto;padding:3rem 0 5rem}
+header{border-bottom:2px solid rgba(251,191,36,0.3);padding-bottom:1.25rem;margin-bottom:2.5rem;display:flex;
+  justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:1rem}
+header a{color:#fbbf24;text-decoration:none;font-weight:600}
+header a:hover{color:white}
+header .brand{font-size:1.05rem;font-weight:600;color:#fbbf24;text-transform:lowercase;letter-spacing:0.02em}
+h1,h2,h3{color:#fbbf24;font-weight:300;margin:2rem 0 1rem;line-height:1.25;letter-spacing:-0.01em}
+h1{font-size:2.2rem;margin-top:0;font-weight:400}
+h2{font-size:1.4rem;border-bottom:1px solid rgba(251,191,36,0.18);padding-bottom:0.5rem;margin-top:2.5rem}
+h3{font-size:1.1rem;color:rgba(251,191,36,0.85)}
+p{margin:0.75rem 0;color:rgba(255,255,255,0.92)}
+strong{font-weight:600;color:white}
+a{color:#fbbf24;text-decoration:underline;text-underline-offset:3px}
+a:hover{color:white}
+ul{margin:0.5rem 0 1rem 1.25rem;padding-left:0.75rem}
+li{margin:0.4rem 0;color:rgba(255,255,255,0.88);line-height:1.55}
+hr{border:none;border-top:1px dashed rgba(251,191,36,0.3);margin:2rem 0}
+code{background:rgba(0,0,0,0.35);padding:0.1rem 0.45rem;border-radius:4px;font-family:"IBM Plex Mono",monospace;
+  font-size:0.92em;color:#fbbf24}
+.post-card{background:rgba(0,0,0,0.22);border:1px solid rgba(251,191,36,0.25);border-radius:8px;
+  padding:1.5rem 1.5rem;margin-bottom:1rem;display:block;text-decoration:none;color:inherit;transition:all .2s}
+.post-card:hover{border-color:rgba(251,191,36,0.55);transform:translateY(-2px);text-decoration:none}
+.post-card .date{color:rgba(251,191,36,0.7);font-size:0.85rem;font-family:"IBM Plex Mono",monospace}
+.post-card .title{color:#fbbf24;font-size:1.2rem;font-weight:500;margin:0.5rem 0 0.5rem}
+.post-card .desc{color:rgba(255,255,255,0.78);font-size:0.95rem;line-height:1.55}
+.muted{color:rgba(255,255,255,0.6);font-size:0.92rem;font-style:italic}
+.tag{display:inline-block;background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.3);
+  border-radius:999px;padding:0.2rem 0.7rem;font-size:0.78rem;margin:0.15rem 0.2rem 0 0;text-transform:lowercase}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a href="../" class="brand">tattoo.foundation</a>
+  <a href="./">all updates →</a>
+</header>
+<article>
+<h1>FMCSA &amp; Labor Changelog — Baseline Snapshot, 2026-05-21</h1>
+<p><strong>Period:</strong> 2026-05-14 → 2026-05-21 · <strong>Source:</strong> FMCSA SAFER + Authority History + Insurance Filings + DOL OFLC H-2B Disclosure, via the SuperTrucker spine, donated to the TATTOO Foundation.</p>
+<h2>TL;DR</h2>
+<ul>
+<li>2,000 insurance filings touched this period — 1,834 cancellations, 0 new active 91X coverages.</li>
+<li>200 carriers (≥25 power units) are currently breaching FMCSA intervention thresholds in two or more BASIC safety categories.</li>
+<li>The broker dataset now includes 31,958 entities.</li>
+</ul>
+<h2>Dataset footprint</h2>
+<p>What's currently published through the public TATTOO Foundation MCP (<code>mcp.tattoo.foundation</code>) and the SuperTrucker chat UI (<code>data.supertrucker.ai</code>).</p>
+<ul>
+<li>4,426,945 commercial carriers (full FMCSA SAFER census)</li>
+<li>2,194,522 carriers currently with <strong>Active</strong> authority</li>
+<li>0 carriers flagged <strong>Out-of-Service</strong></li>
+<li>4,673,469 authority-history events (revocations, grants, suspensions, transfers)</li>
+<li>458,975 FMCSA insurance filings (91X / 34 / 84 / 85 / 91, etc.)</li>
+<li>1,056 DOL H-2B trucking applications (SOC 53-30xx)</li>
+</ul>
+<h2>Insurance signals</h2>
+<p>2,000 insurance filings touched this period — 1,834 cancellations, 0 new active 91X coverages.</p>
+<p><strong>Insurance cancellations / lapses</strong> (largest fleets first):</p>
+<ul>
+<li><strong>SUNNY RIVER LLC</strong> — USDOT 2789048 — 91X Active via CIRCLE STAR INSURANCE CO., A R R G — cancelled 2026-05-19 — coverage was $750,000 — fleet 560</li>
+<li><strong>SHEEHY MAIL CONTRACTORS INC</strong> — USDOT 83820 — 91X Active via THIRD COAST INSURANCE COMPANY — cancelled 2026-05-15 — coverage was $1,000,000 — fleet 506</li>
+<li><strong>GET IT THERE TRUCKING LLC</strong> — USDOT 3565994 — 91X Active via ACCREDITED SPECIALTY INSURANCE COMPANY — cancelled 2026-05-21 — coverage was $750,000 — fleet 401</li>
+<li><strong>UZB FREIGHT INC</strong> — USDOT 2960200 — 91X Active via OBSIDIAN  INSURANCE COMPANY — cancelled 2026-05-14 — coverage was $1,000,000 — fleet 374</li>
+<li><strong>DEADHEAD TRUCKING LLC</strong> — USDOT 3689437 — 91X Active via ARTISAN &amp; TRUCKERS CASUALTY COMPANY — cancelled 2026-05-15 — coverage was $1,000,000 — fleet 341</li>
+<li><strong>FREIGHTSTAR EXPEDITED LLC</strong> — USDOT 2020842 — 91X Active via ARTISAN &amp; TRUCKERS CASUALTY COMPANY — cancelled 2026-05-20 — coverage was $1,000,000 — fleet 301</li>
+</ul>
+<h2>BASIC safety outliers (multi-category)</h2>
+<p>200 carriers (≥25 power units) are currently breaching FMCSA intervention thresholds in two or more BASIC safety categories. Multi-BASIC breach is the strongest pre-revocation signal in the dataset — these carriers are the most likely cohort for safety-driven authority action in the next 90 days.</p>
+<p><strong>Carriers tripping FMCSA intervention thresholds in multiple BASIC categories</strong> (latest snapshot):</p>
+<ul>
+<li><strong>TMT TRUCKING LLC</strong> — USDOT 3461561 — 6 categories breached: controlled_substances, driver_fitness, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance — fleet 785</li>
+<li><strong>ALL GOOD TRUCKING LLC</strong> — USDOT 3641869 — 6 categories breached: controlled_substances, driver_fitness, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance — fleet 35</li>
+<li><strong>ARL TRANSPORT LLC</strong> — USDOT 186375 — 5 categories breached: controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance — fleet 755</li>
+<li><strong>CLOUDTRUCKS LLC</strong> — USDOT 3300318 — 5 categories breached: controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance — fleet 655</li>
+<li><strong>GREATWIDE AMERICAN TRANS-FREIGHT LLC</strong> — USDOT 753551 — 5 categories breached: controlled_substances, hazmat_compliance, hours_of_service, unsafe_driving, vehicle_maintenance — fleet 284</li>
+<li><strong>TRYTIME TRANSPORT LLC</strong> — USDOT 1994664 — 5 categories breached: controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance — fleet 200</li>
+<li><strong>BIG LEVEL TRUCKING INC</strong> — USDOT 721704 — 5 categories breached: controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance — fleet 198</li>
+<li><strong>ROCKET EXPD LLC</strong> — USDOT 576217 — 5 categories breached: controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance — fleet 173</li>
+<li><strong>CLEMENT TRANSPORT LLC</strong> — USDOT 3371628 — 5 categories breached: controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance — fleet 125</li>
+<li><strong>CRENA TRANSPORTATION SERVICES LLC</strong> — USDOT 3809748 — 5 categories breached: controlled_substances, driver_fitness, hours_of_service, unsafe_driving, vehicle_maintenance — fleet 100</li>
+</ul>
+<h2>Freight brokers — bond and authority footprint</h2>
+<p>The broker dataset now includes 31,958 entities. 30,022 hold active authority; 0 carry an active surety bond (BMC-84 or trust agreement). Broker bond-status signals will get section-level treatment once the schema's enrichment (surety substitutions, out-of-trust events) is wired into the snapshot loop.</p>
+<ul>
+<li>31,958 brokers in dataset</li>
+<li>30,022 with active authority</li>
+<li>31,958 with bond data attached</li>
+<li>0 with bond status currently active</li>
+</ul>
+<hr>
+<h2>Methodology</h2>
+<p>Data is queried daily from the SuperTrucker spine database (FMCSA SAFER census + authority history + insurance filings + DOL H-2B disclosure data). Posts are auto-generated by <code>@supertrucker/changelog-gen</code>. Filtering targets labor-trafficking, trucking-industry, and freight-brokering signals — not exhaustive coverage. Corrections and tips: tk@tattoo.foundation.</p>
+<p><strong>Try the data yourself:</strong> <a href="https://mcp.tattoo.foundation/mcp"><code>mcp.tattoo.foundation</code></a> (MCP for AI agents) · <a href="https://data.supertrucker.ai"><code>data.supertrucker.ai</code></a> (chat UI for humans). Both free; the Foundation's mission tier is donor-funded and never paywalls driver-protective queries.</p>
+</article>
+<p class="muted" style="margin-top:3rem">Try the data: <a href="https://mcp.tattoo.foundation/mcp">mcp.tattoo.foundation/mcp</a> · <a href="https://data.supertrucker.ai">data.supertrucker.ai</a></p>
+</div>
+</body>
+</html>
