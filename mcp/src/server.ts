@@ -181,7 +181,7 @@ app.get("/", (_req, res) => {
       "MCP endpoint: POST /mcp (Streamable HTTP, MCP spec 2025-03-26+).\n" +
       "Health: GET /healthz\n" +
       "Discovery: https://tattoo.foundation/.well-known/mcp.json\n" +
-      "Dataset built by Carso Cybernetics on the SuperTrucker platform; query access donated to the TATTOO Foundation, which publishes the data here.\n",
+      "Dataset built by Carso Cybernetics on the Carso Exchange platform; query access donated to the TATTOO Foundation, which publishes the data here.\n",
   );
 });
 

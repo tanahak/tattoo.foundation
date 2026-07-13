@@ -11,8 +11,8 @@
   "dataset_origin": {
     "built_by": "Carso Cybernetics",
     "built_by_url": "https://carsocybernetics.com",
-    "source_platform": "SuperTrucker",
-    "source_platform_url": "https://supertrucker.ai",
+    "source_platform": "Carso Exchange (formerly SuperTrucker)",
+    "source_platform_url": "https://carso.exchange",
     "license": "Donated query access to the TATTOO Foundation for public, driver-protective service."
   },
   "endpoints": {
@@ -38,8 +38,8 @@
       "url": "https://carsocybernetics.com/.well-known/mcp.json"
     },
     {
-      "name": "SuperTrucker",
-      "url": "https://supertrucker.ai/.well-known/mcp.json"
+      "name": "Carso Exchange",
+      "url": "https://carso.exchange/.well-known/mcp.json"
     }
   ],
   "context_files": [
