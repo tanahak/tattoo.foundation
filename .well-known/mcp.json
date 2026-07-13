@@ -1,7 +1,7 @@
 {
   "name": "tattoo-foundation-carrier-intelligence-mcp",
-  "description": "Public Model Context Protocol server published by the TATTOO Foundation (501(c)(3) survivor-founded driver-protection nonprofit, EIN 33-2580477). Provides US commercial trucking carrier intelligence \u2014 FMCSA SAFER census, authority history, insurance filings, crash records, roadside inspections, computed BASIC safety scores, H-2B trucking labor applications. Dataset built by Carso Cybernetics on the SuperTrucker platform; query access donated to the Foundation, which serves it publicly here.",
-  "version": "0.2.0",
+  "description": "Public Model Context Protocol server published by the TATTOO Foundation (501(c)(3) survivor-founded driver-protection nonprofit, EIN 33-2580477). Provides H-2B trucking labor application data (DOL disclosure, trucking SOC codes) for driver protection and labor-coercion pattern detection. Carrier-lookup tools were withdrawn 2026-07-12.",
+  "version": "0.3.0",
   "publisher": {
     "name": "TATTOO Foundation",
     "url": "https://tattoo.foundation",
@@ -23,38 +23,15 @@
   "status": "deployed",
   "tools": [
     {
-      "name": "lookup_carrier",
-      "description": "Verify a US commercial trucking carrier by USDOT number or legal/DBA name."
-    },
-    {
-      "name": "carrier_revocation_history",
-      "description": "Full authority-history timeline (revocations, grants, suspensions, transfers) for a carrier."
-    },
-    {
-      "name": "carrier_insurance_status",
-      "description": "FMCSA insurance filings \u2014 active 91X auto liability and other types \u2014 for a carrier."
-    },
-    {
       "name": "h2b_trucking_employers",
       "description": "DOL H-2B labor disclosure data filtered to trucking SOC codes (53-30xx)."
-    },
-    {
-      "name": "carrier_safety_history",
-      "description": "Crash record and roadside inspection history \u2014 fatalities, injuries, OOS rates vs national averages, violations by BASIC category."
-    },
-    {
-      "name": "carrier_safety_scores",
-      "description": "Computed BASIC safety percentiles (FMCSA SMS-style, six categories) with intervention-threshold breach flags."
     }
   ],
   "dataset_stats": {
-    "carriers": 4426945,
-    "authority_history_events": 4673469,
-    "insurance_filings": 458975,
     "h2b_trucking_applications": 1056,
     "as_of": "2026-04-26"
   },
-  "notes": "Server is deployed and operational. The TATTOO Foundation is the public publisher of this MCP \u2014 it gives the Foundation the trust and reputation that come from serving authoritative organic carrier intelligence to agentic clients. Dataset is shared with SuperTrucker (the same data also powers the SuperTrucker product at data.supertrucker.ai).",
+  "notes": "Server is deployed and operational. Carrier-intelligence tools (lookup, authority history, insurance, safety history, BASIC scores, search) were withdrawn from this server on 2026-07-12; the Foundation now serves labor-protection data only.",
   "related_servers": [
     {
       "name": "Carso Cybernetics",
@@ -67,11 +44,5 @@
   ],
   "context_files": [
     "https://tattoo.foundation/llm.txt"
-  ],
-  "human_ui": "https://tattoo.foundation/lookup.html",
-  "rest_api": {
-    "search": "https://mcp.tattoo.foundation/api/search?q=<dot-or-name>",
-    "carrier_report": "https://mcp.tattoo.foundation/api/carrier/<dot>",
-    "stats": "https://mcp.tattoo.foundation/api/stats"
-  }
+  ]
 }
